@@ -45,7 +45,7 @@ def jalan(z):
 def tik():
     titik = ['.   ','..  ','... ']
     for o in titik:
-        print ('\r%s%s menghapus token %s'%(M,til,o)),
+        print ('\r%s%s sabar kentod, sedang menghapus token %s'%(M,til,o)),
         sys.stdout.flush();jeda(1)
 def folder():
 	try:os.mkdir('hasil')
@@ -61,13 +61,13 @@ def folder():
 IP = requests.get("https://api.ipify.org/").text
 def banner():
 	print (''' %s 
- © [ Group ]%s \n __________       _____.__  \n \____    /____ _/ ____\__| %s|•| %sZona \n   /     /\\__  \\\   __\|  | %s|•| %sAkun \n  /     /_ / __ \|  |  |  | %s|•| %s Facebook [Meta] \n /_______ (____  /__|  |__| %s|•| %s Indonesia \n         \/    \/ \n %s[%s•%s] Coded By : %sAang Ardiansyah-XD \n %s[%s•%s] -------------------------------------- \n [%s•%s] IP Kamu  : %s%s'''%
+ © [ YNTKTS] Yo Ndak Tau Kok Tanya Saia%s \n __________       _____.__  \n \____    /____ _/ ____\__| %s|| %sZona \n   /     /\\__  \\\   __\|  | %s|| %sAkun \n  /     /_ / __ \|  |  |  | %s||%s Facebook [Meta] \n /_______ (____  /__|  |__| %s||%s Indonesia \n         \/    \/ \n %s[%s•%s] Author : %sAang Ardiansyah-XD \n %s[%s•%s] Github : %sGithub.com/AngCyber \n %s[%s•%s] Contac : %s089524163441-XD \n %s[%s•%s] -------------------------------------- \n [%s•%s] IP Kamu  : %s%s'''%
  (H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('\n%s [01] Login via token \n [02] Cara mendapatkan token \n [%s00%s] Keluar'%(P,M,P))
+    print ('\n%s [01] Login pakai token \n [02] Cara mendapatkan token \n [%s00%s] Keluar'%(P,M,P))
     rom = raw_input('\n%s [?] Menu : %s'%(P,K))
     if rom in(""):
     	print("%s [!] Isi yang benar kentod "%(M));exit()
@@ -78,11 +78,11 @@ def masuk():
         	print("%s [!] Isi yang benar kentod "%(M));exit()
     	try:
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
-            print ('\n%s[√] Login berhasil, mohon tunggu '%(H));jeda(2)
+            print ('\n%s[√] Login berhasil, sabar tod '%(H));jeda(2)
             open('token.txt', 'w').write(romz);login_xx()
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
         except (KeyError,IOError):
-        	print("%s [!] Token invalid "%(M));masuk()
+        	print("%s [!] Waduh token invalid cukk "%(M));masuk()
     elif rom in ('2', '02'):
     	print ("\n%s%s Berikut cara nya :"%(H,til));jeda(2)
         print (" - siapkan akun facebook (wajib akun tumbal)");jeda(2)
