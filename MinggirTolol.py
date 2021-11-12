@@ -66,7 +66,7 @@ def banner():
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('\n%s [01] Login via token \n [02] Cara mendapatkan token \n [%s00%s] Keluar'%(P,M,P))
+    print ('\n%s [01] Login pakai token \n [02] Cara mendapatkan token \n [%s00%s] Keluar'%(P,M,P))
     rom = raw_input('\n%s [?] Menu : %s'%(P,K))
     if rom in(""):
     	print("%s [!] Isi yang benar kentod "%(M));exit()
@@ -85,7 +85,7 @@ def masuk():
     elif rom in ('2', '02'):
     	print ("\n%s%s Berikut cara nya :"%(H,til));jeda(2)
         print (" - siapkan akun facebook (wajib akun tumbal)");jeda(2)
-        print (" - loginkan akun facebook (tumbal) di browser %sChrome %s"%(O,H));jeda(2)
+        print (" - loginkan akun facebook (akun tumbal) di browser %sChrome %s"%(O,H));jeda(2)
         print (" - url alamat wajib %shttps://m.facebook.com %s(mode data)"%(O,H));jeda(2)
         print (" - salin link : %shttps://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_"%(O));jeda(2)
         print ("%s - taruh link tersebut di url alamat facebook lalu klik cari "%(H));jeda(2)
@@ -623,9 +623,9 @@ def menu():
     print (' [%s05%s] %sStart crack %s'%(K,P,H,P)) 
     print (' [%s06%s] Setting user agent'%(K,P)) 
     print (' [%s07%s] Cek hasil crack'%(K,P)) 
-    #print (' [%s08%s] Gabung group'%(K,P))
-    #print (' [%s09%s] Info script'%(K,P))
-    print (' [%s00%s] Hapus token '%(M,P))
+  #print (' [%s08%s] Gabung group'%(K,P))
+  #print (' [%s09%s] Info script'%(K,P))
+    print (' [%s00%s] Log out/Hapus token '%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
