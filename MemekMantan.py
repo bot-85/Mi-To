@@ -72,13 +72,13 @@ def masuk():
     if rom in(""):
     	print("%s [!] Isi yang benar kentod "%(M));exit()
     elif rom in ('1','01'):
-        jalan("\n%s [%s!%s] Wajib menggunakan akun tumbal dilarang akun utama"%(P,M,P))
-    	romz = raw_input('%s [?] Masukin token dulu lah bro :  %s'%(P,K))
+        jalan("\n%s [%s!%s] Wajib menggunakan akun tumbal dilarang akun utama!!"%(P,M,P))
+    	romz = raw_input('%s [?] Masukin token dulu bro :  %s'%(P,K))
         if romz in(""):
         	print("%s [!] Isi yang benar kentod "%(M));exit()
     	try:
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
-            print ('\n%s[√] Login berhasil, sabar tod '%(H));jeda(2)
+            print ('\n%s[✓] Login berhasil, sabar kentod!! '%(H));jeda(2)
             open('token.txt', 'w').write(romz);login_xx()
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
         except (KeyError,IOError):
@@ -616,17 +616,17 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print ('\n %s[ welcome %s%s%s ] \n'%(P,K,nama,P))
+    print ('\n %sSelamat Datang -> [%s%s%s] \n'%(P,K,nama,P))
     print (' [%s01%s] Dump id public'%(K,P)) 
     print (' [%s02%s] Dump id followers'%(K,P)) 
     print (' [%s03%s] Dump id reaction post'%(K,P))
     print (' [%s04%s] Crack cari nama (instagram) '%(K,P))
-    print (' [%s05%s] %sStart crack %s'%(K,P,H,P)) 
+    print (' [%s05%s] %sStart crack/Mulai carck %s'%(K,P,H,P)) 
     print (' [%s06%s] Setting user agent'%(K,P)) 
-    print (' [%s07%s] Cek hasil crack'%(K,P)) 
+    print (' [%s07%s] Cek hasil crack saya'%(K,P)) 
     #print (' [%s08%s] Gabung group'%(K,P))
     #print (' [%s09%s] Info script'%(K,P))
-    print (' [%s00%s] Hapus token '%(M,P))
+    print (' [%s00%s] Log out/Hapus token '%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
