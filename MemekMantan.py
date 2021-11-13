@@ -94,8 +94,8 @@ def masuk():
         print (" - jika sudah, klik %stitik tiga %spojok kanan atas "%(O,H));jeda(2)
         print (" - kemudian klik %sCari di Halaman %s"%(O,H));jeda(2)
         print (" - ketik %sEAAAA %sakan muncul acces token."%(O,H));jeda(2)
-        print (" - jika sudah jangan lupa di salin \n");jeda(2)
-        print (" - jika belum paham, pilih (n) lalu enter
+        print (" - jika sudah jangan lupa di salin "%(O,H));jeda(2)
+        print (" - jika belum paham, pilih (n) lalu enter ");jeda(2)
         nanya = raw_input('%s [?] Anda paham? [%sy%s/%sn%s] :%s '%(P,H,P,M,P,K))
         if nanya in(""):
         	print ("%s [!] saya bertanya wajib di jawab "%(M));jeda(2);masuk()
