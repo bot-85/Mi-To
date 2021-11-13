@@ -95,11 +95,13 @@ def masuk():
         print (" - kemudian klik %sCari di Halaman %s"%(O,H));jeda(2)
         print (" - ketik %sEAAAA %sakan muncul acces token."%(O,H));jeda(2)
         print (" - jika sudah jangan lupa di salin \n");jeda(2)
+        print (" - jika belum paham, pilih (n) lalu enter
         nanya = raw_input('%s [?] Anda paham? [%sy%s/%sn%s] :%s '%(P,H,P,M,P,K))
         if nanya in(""):
         	print ("%s [!] saya bertanya wajib di jawab "%(M));jeda(2);masuk()
         elif nanya in("y","Y"):
         	print ("\n%s [√] selamat anda pintar :* "%(H));jeda(2);masuk()
+            os.system('xdg-open https://youtube.com/channel/UCqwjydkaE3y0qo-3Yl3yL3A')
         elif nanya in("n","N"):
         	print ("\n%s [!] anda sungguh tolol,goblok,dan ngentod!! "%(M));jeda(2);os.system("xdg-open https://youtu.be/iDVCcnLcTnE");masuk()
     elif rom in ('0', '00'):
