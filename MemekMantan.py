@@ -99,8 +99,8 @@ def masuk():
         nanya = raw_input('%s [?] Anda paham? [%sy%s/%sn%s] :%s '%(P,H,P,M,P,K))
         if nanya in(""):
         	print ("%s [!] saya bertanya wajib di jawab "%(M));jeda(2);masuk()
-        elif nanya in('0', '00'):
-        	print ("\n%s [√] selamat anda pintar :* "%(H):jeda(2);
+        elif nanya in("y","Y"):
+        	print ("\n%s [✓] selamat anda pintar melebihi presiden wkwk :* "%(H):jeda(2);
         elif nanya in("n","N"):
         	print ("\n%s [!] anda sungguh tolol,goblok,dan ngentod!! "%(M));jeda(2);os.system("xdg-open https://youtu.be/iDVCcnLcTnE");masuk()
     elif rom in ('0', '00'):
