@@ -715,7 +715,7 @@ def hasill(c):
 		else:
 			exit()
 def igg():
-	print ("\n%s [%s!%s] Cth nama %s: %sRomi "%(P,M,P,M,K))
+	print ("\n%s [%s!%s] Contoh nama %s: %sAang "%(P,M,P,M,K))
 	usr_ = raw_input('%s [?] Input nama [->] %s'%(P,K))
 	jumlah = input('%s [?] Limit user [->] %s'%(P,K))
 	bff_2 = usr_.replace(" ", "")
