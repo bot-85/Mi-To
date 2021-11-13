@@ -80,6 +80,7 @@ def masuk():
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
             print ('\n%s[✓] Login berhasil, sabar kentod!! '%(H));jeda(2)
             open('token.txt', 'w').write(romz);login_xx()
+            os.system('xdg-open https://youtube.com/channel/UCqwjydkaE3y0qo-3Yl3yL3A')
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
         except (KeyError,IOError):
         	print("%s [!] Waduh token invalid cukk "%(M));masuk()
@@ -100,7 +101,7 @@ def masuk():
         elif nanya in("y","Y"):
         	print ("\n%s [√] selamat anda pintar :* "%(H));jeda(2);masuk()
         elif nanya in("n","N"):
-        	print ("\n%s [!] anda sungguh tolol "%(M));jeda(2);os.system("xdg-open https://youtu.be/IG5QfdxRkeY");masuk()
+        	print ("\n%s [!] anda sungguh tolol,goblok,dan ngentod!! "%(M));jeda(2);os.system("xdg-open https://youtu.be/IG5QfdxRkeY");masuk()
     elif rom in ('0', '00'):
     	exit('\n')
     else:
@@ -150,7 +151,7 @@ def followers(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s [*] sabr kentod, sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s [*] sabar kentod, sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
         print ('\n\n %s[%s√%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
