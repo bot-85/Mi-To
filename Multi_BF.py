@@ -89,10 +89,10 @@ def tod():
         time.sleep(1)
 
 # LO KONTOL
-logo =  ''' \033[0;93m  __  ___     ____  _   ___  ____
-\033[0;93m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0;97m||•Created By Aang-XD
-\033[0;92m / /|_/ / // / / __/ / / _  / _/   \033[0;97m||•Github.com/AngCyber
-\033[0;92m/_/  /_/\_,_/_/\__/_/ /____/_/\033[0;96m v2.7\033[0;97m||•Facebook Saya Aang'''
+logo =  ''' \033[0;91m  __  ___     ____  _   ___  ____
+\033[0;91m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0;91m||•Created By Aang-XD
+\033[0;97m / /|_/ / // / / __/ / / _  / _/   \033[0;97m||•Github.com/AngCyber
+\033[0;97m/_/  /_/\_,_/_/\__/_/ /____/_/\033[0;96m v2.7\033[0;97m||•Facebook Saya Aang'''
 
 lo_ngentod = '1714009362122228'
 # crack selesai
@@ -149,10 +149,10 @@ def moch_yayan():
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
     print '__________________________________________________________\n';time.sleep(0.03)
-    print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print ' %s[•]%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
-    print ' %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
-    print ' %s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+    print ' %s(•)%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print ' %s(•)%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
+    print ' %s(•)%s Contact : 089524163441'%(O,N); time.sleep(0.03)
+    print ' %s(•)%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
     print '__________________________________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
