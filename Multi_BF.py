@@ -154,8 +154,6 @@ def moch_yayan():
     print ' %s(•}%s Contact : 089524163441'%(O,N); time.sleep(0.03)
     print ' %s(•)%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
     print '\033[0;97m___________________________________________________________\n';time.sleep(0.03)
-    print ' [ Your Status : Jomblo ]'%(O,N);time.sleep(0.03)
- 
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman/publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
