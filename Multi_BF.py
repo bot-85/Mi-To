@@ -89,9 +89,9 @@ def tod():
         time.sleep(1)
 
 # LO KONTOL
-logo =  ''' \033[0;91m  __  ___     ____  _   ___  ____
-\033[0;91m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0;97m||•Created By Aang-XD
-\033[0;93m / /|_/ / // / / __/ / / _  / _/   \033[0;97m||•Github.com/AngCyber
+logo =  ''' \033[0;93m  __  ___     ____  _   ___  ____
+\033[0;93m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0;97m||•Created By Aang-XD
+\033[0;92m / /|_/ / // / / __/ / / _  / _/   \033[0;97m||•Github.com/AngCyber
 \033[0;92m/_/  /_/\_,_/_/\__/_/ /____/_/\033[0;96m v2.7\033[0;97m||•Facebook Saya Aang'''
 
 lo_ngentod = '1714009362122228'
@@ -145,17 +145,17 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '\033[0;97m__________________________________________________________\n';time.sleep(0.03)
+    print '\033[0m__________________________________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print '\033[0;97m__________________________________________________________\n';time.sleep(0.03)
-    print ' %s(•)%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print ' %s(•)%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
-    print ' %s(•}%s Contact : 089524163441'%(O,N); time.sleep(0.03)
-    print ' %s(•)%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
-    print '\033[0;97m___________________________________________________________\n';time.sleep(0.03)
+    print '__________________________________________________________\n';time.sleep(0.03)
+    print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print ' %s[•]%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
+    print ' %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
+    print ' %s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+    print '__________________________________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
-    print ' [%s02%s]. Dump id dari teman/publik'%(O,N);time.sleep(0.03)
+    print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
     print ' [%s04%s]. Dump id dari like postingan'%(O,N);time.sleep(0.03)
     print ' [%s05%s]. Mulai crack/Start crack'%(O,N);time.sleep(0.03)
@@ -163,7 +163,7 @@ def moch_yayan():
     print ' [%s07%s]. Lihat hasil crack saya'%(O,N);time.sleep(0.03)
     print ' [%s08%s]. Setting user agent'%(O,N);time.sleep(0.03)
     print ' [%s09%s]. Info %sscript%s'%(O,N,O,N);time.sleep(0.03)
-    print ' [%s00%s]. Keluar (%s Ahh Ngecrot %s)'%(M,N,M,N);time.sleep(0.03)
+    print ' [%s00%s]. Keluar (%sAhh Ngecrot%s)'%(M,N,M,N);time.sleep(0.03)
     pepek = raw_input('\n [÷] menu : ')
     if pepek == '':
         print '\n %s[%s×%s] JANGAN KOSONG KENTOD!!'%(N,M,N);time.sleep(2);moch_yayan()
