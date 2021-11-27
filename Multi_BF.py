@@ -148,7 +148,7 @@ def moch_yayan():
     print '\033[0;97m__________________________________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print ' (\033[0;96m•\033[0m) STATUS    : Jomblo (gak laku wkwk)
+    print ' (\033[0;96m•\033[0m) STATUS    : %sJomblo'%(status);time.sleep(0.03)
     print '\033[0;97m__________________________________________________________\n';time.sleep(0.03)
     print ' %s(•)%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s(•)%s Github  : Github.com/AngCyber'%(O,N);time.sleep(0.03)
