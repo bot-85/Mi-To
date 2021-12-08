@@ -688,12 +688,12 @@ def hasill(c):
 			print("%s╠═[%s•%s] Hasil Crack Akun CP ] "%(P,K,P));jeda(2)
 			nm_file = ("%s"%(file)).replace("-", " ")
 			jalan("╠═[%s•%s] Total Akun : %s"%(K,P,len(total)))
-			print("%s╠═[%s•%s]══════════════════%s"%(P,K,P,H));jeda(2)
+			print("%s╠═[%s•%s]════════════════════════════════════════════════════════%s"%(P,K,P,H));jeda(2)
 			for akun in total:
 				fb = akun.replace("\n","")
 				tling  = fb.replace("-> ", "->").replace("->", "-> ")
 				print(tling);jeda(0.03)
-			print("%s╠═[%s•%s]══════════════════%s"%(P,K,P,H));jeda(2)
+			print("%s╠═[%s•%s]════════════════════════════════════════════════════════%s"%(P,K,P,H));jeda(2)
 			raw_input('\n%s╚═[ %sEnter %s] '%(P,K,P));menu()
 		except (IOError):
 			print("\n%s [!] tidak ada hasil "%(M))
@@ -708,10 +708,10 @@ def hasill(c):
 				oke = open("okeh.txt", "r").readlines()
 				print("%s╠═[%s•%s] Hasil Crack Akun OK"%(P,K,P));jeda(2)
 				jalan("╠═[%s•%s] Total Akun : %s%s"%(K,P,H,str(len(oke))))
-				print("%s╠═[%s•%s]══════════════════%s"%(P,K,P,H));jeda(2)
+				print("%s╠═[%s•%s]════════════════════════════════════════════════════════%s"%(P,K,P,H));jeda(2)
 				okek = open("okeh.txt", "r").read()
 				print (okek)
-				exit("%s╠══════════════════"%(P,K,P));jeda(2)
+				exit("%s╠════════════════════════════════════════════════════════"%(P,K,P));jeda(2)
 			except IOError,KeyError:
 				exit (M+"\n╚═[•] tidak ada hasil awokawok ]")
 		elif rom in['2','02']:
@@ -719,10 +719,10 @@ def hasill(c):
 				cepe = open("cepeh.txt", "r").readlines()
 				print("%s╠═[%s•%s] Hasil Crack Akun CP"%(P,K,P));jeda(2)
 				jalan("╠═[%s+%s] Total Akun : %s%s"%(K,P,K,str(len(cepe))))
-				print("%s╠═[%s•%s]══════════════════%s"%(P,K,P,H));jeda(2)
+				print("%s╠═[%s•%s]════════════════════════════════════════════════════════%s"%(P,K,P,H));jeda(2)
 				cepek = open("cepeh.txt", "r").read()
 				print (cepek)
-				exit("%s╠═══════════════════"%(P,K,P));jeda(2)
+				exit("%s╠═════════════════════════════════════════════════════════"%(P,K,P));jeda(2)
 			except IOError,KeyError:
 				exit (M+"\n╚═[•] tidak ada hasil awokawokawok ]")
 		else:
