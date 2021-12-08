@@ -681,19 +681,19 @@ def hasill(c):
 			for file in dirs:
 				print("%s╠═[ %s%s"%(K,P,file));jeda(0.2)
 			print("\n%s╔═[%s•%s] Contoh : CP-%s-%s-%s%s"%(P,M,P,ha,op,ta,".txt"))
-			file = raw_input("%s╠═[?] Masukan nama file : "%(P));jeda(0.2)
+			file = raw_input("%s╠═[?] Masukan nama file : "%(P));jeda(0.03)
 			if file == "":
 				print("%s╚═[!] file tidak ada ] "%(M))
 			total = open("hasil/%s"%(file)).read().splitlines()
-			print("%s╠═[%s•%s] Hasil Crack Akun CP ] "%(P,K,P));jeda(2)
+			print("%s╠═[%s•%s] Hasil Crack Akun CP ] "%(P,K,P));jeda(0.03)
 			nm_file = ("%s"%(file)).replace("-", " ")
 			jalan("╠═[%s•%s] Total Akun : %s"%(K,P,len(total)))
-			print("%s╠══════════════════"%(P,K,P));jeda(2)
+			print("%s╠══════════════════"%(P,K,P));jeda(0.03)
 			for akun in total:
 				fb = akun.replace("\n","")
 				tling  = fb.replace("-> ", "->").replace("->", "-> ")
 				print(tling);jeda(0.03)
-			print(" %s╠══════════════════"%(P,K,P));jeda(2)
+			print(" %s╠══════════════════"%(P,K,P));jeda(0.03)
 			raw_input('\n%s╚═[ %sEnter %s] '%(P,K,P));menu()
 		except (IOError):
 			print("\n%s [!] tidak ada hasil "%(M))
@@ -706,25 +706,25 @@ def hasill(c):
 		if rom in['1','01']:
 			try:
 				oke = open("okeh.txt", "r").readlines()
-				print("%s╠═[%s•%s] Hasil Crack Akun OK"%(P,K,P));jeda(2)
+				print("%s╠═[%s•%s] Hasil Crack Akun OK"%(P,K,P));jeda(0.03)
 				jalan("╠═[%s•%s] Total Akun : %s%s"%(K,P,H,str(len(oke))))
-				print("%s╠══════════════════%s"%(P,K,P,H));jeda(2)
+				print("%s╠══════════════════%s"%(P,K,P,H));jeda(0.03)
 				okek = open("okeh.txt", "r").read()
 				print (okek)
-				exit("%s╠══════════════════"%(P,K,P));jeda(2)
+				exit("%s╠══════════════════"%(P,K,P));jeda(0.03)
 			except IOError,KeyError:
 				exit (M+"\n╚═[•] tidak ada hasil awokawok ]")
 		elif rom in['2','02']:
 			try:
 				cepe = open("cepeh.txt", "r").readlines()
-				print("%s╠═[%s•%s] Hasil Crack Akun CP"%(P,K,P));jeda(2)
+				print("%s╠═[%s•%s] Hasil Crack Akun CP"%(P,K,P));jeda(0.03)
 				jalan("╠═[%s+%s] Total Akun : %s%s"%(K,P,K,str(len(cepe))))
-				print("%s╠══════════════════%s"%(P,K,P,K));jeda(2)
+				print("%s╠══════════════════%s"%(P,K,P,K));jeda(0.03)
 				cepek = open("cepeh.txt", "r").read()
 				print (cepek)
-				exit("%s╠══════════════════"%(P,K,P));jeda(2)
+				exit("%s╠══════════════════"%(P,K,P));jeda(0.03)
 			except IOError,KeyError:
-				exit (M+"\n╚═[•] tidak ada hasil awokawokawok")
+				exit (M+"\n╚═[•] tidak ada hasil awokawokawok ]")
 		else:
 			exit()
 def igg():
@@ -739,8 +739,8 @@ def igg():
 		mi.append(bff_2+str(_i_)+"|"+bff_2)
 		mi.append(bff_2+"_"+str(_i_)+"|"+bff_2)
 		mi.append(bff_2+str(_i_)+"_"+"|"+bff_2)
-	print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s okeh.txt'%(P,K,P,H,P,H);jeda(0.2)
-	print '%s╚═[%s+%s] akun %sCP %stersimpan di > %scepeh.txt\n'%(P,K,P,K,P,K);jeda(0.2)
+	print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s okeh.txt'%(P,K,P,H,P,H);jeda(0.02)
+	print '%s╚═[%s+%s] akun %sCP %stersimpan di > %scepeh.txt\n'%(P,K,P,K,P,K);jeda(0.02)
 	with ThreadPoolExecutor(max_workers=30) as log:
 		for ro in mi:
 			try:
