@@ -137,7 +137,7 @@ def publik(romz,headers=header):
         for a in z['friends']['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚═[•] sabar kentod, sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚═[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
         print ('\n \n%s╔═[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
@@ -145,7 +145,7 @@ def publik(romz,headers=header):
         raw_input('\n%s╚═[ %Enter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n%s╚═[•] dump selesai kentod!!'%(P))
+        exit('\n%s╚═[•] dump selesai tod...'%(P))
 # DUMP FOLLOWERS
 def followers(romz,headers=header):
     try:
@@ -164,7 +164,7 @@ def followers(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚═[•] sabar kentod, sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚═[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
         print ('\n\n%s╔═[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
@@ -172,7 +172,7 @@ def followers(romz,headers=header):
         raw_input('\n%s╚═[ %sEnter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n%s╚═[•] dump selesai kentod!!'%(P))
+        exit('\n%s╚═[•] dump selesai tod...'%(P))
 # DUMP POSTINGAN 
 def postingan(romz,headers=header):
     try:
@@ -190,7 +190,7 @@ def postingan(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚═[•] Sabar sedang mengumpulkan id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚═[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
         print ('\n\n%s╔═[%s✓%s] Succes dump id postingan '%(P,H,P))
@@ -198,7 +198,7 @@ def postingan(romz,headers=header):
         raw_input('\n%s╚═[ %sEnter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n%s╚═[•] dump selesai kentod!!'%(P))
+        exit('\n%s╚═[•] dump selesai tod...'%(P))
 # START CRACK
 class ngentod:
 
@@ -381,7 +381,7 @@ class ngentod:
                 continue
         loop += 1
         rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
-        print('\r%s╚═[Cracking][%s/%s][OK:%s]-[CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s╚═[Cracking][%s/%s][OK:%s][CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
     def basic(self, user, zona):
         try:
@@ -440,7 +440,7 @@ class ngentod:
                 continue
         loop += 1
         rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
-        print('\r%s╚═[Cracking][%s/%s][OK:%s]-[CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s╚═[Cracking][%s/%s][OK:%s][CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
     def mobil(self, user, zona):
         try:
@@ -499,7 +499,7 @@ class ngentod:
                 continue
         loop += 1
         rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
-        print('\r%s╚═[Cracking][%s/%s][OK:%s]-[CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s╚═[Cracking][%s/%s][OK:%s][CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
 def crack2(user, pwx):
 	global looping, loping
@@ -510,7 +510,7 @@ def crack2(user, pwx):
 		else:
 			if len(status_foll) != 1:
 				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
-				print "\r"+rm+"╚═[Crack-Berjalan][%s/%s][OK:%s]-[CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
+				print "\r"+rm+"╚═[Cracking][%s/%s][OK:%s][CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
 				sys.stdout.flush()
 				c_bff_ -= 1
 			else:
@@ -595,7 +595,7 @@ def uas():
             if ua in(""):
             	print("%s╚═[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
             elif ua in("my user agent","My User Agent","MY USER AGENT","My user agent"):
-            	jalan("%s[!] Anda akan di arahkan ke browser "%(H));jeda(2)
+            	jalan("%s╚═[!] Anda akan di arahkan ke browser ] "%(H));jeda(2)
             	os.system("am start https://www.google.com/search?q=My+user+agent>/dev/null");jeda(2);useragent()
             elif ua in("default","Default","DEFAULT"):
                 ua = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
