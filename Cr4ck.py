@@ -131,7 +131,7 @@ def country():
     choose_country()
     
 def choose_country():
-    cc = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    cc = input("\n%s[%s•%s] %sMenu : "%(k,p,k,p))
     if cc in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif cc in["1","01"]:
@@ -195,7 +195,7 @@ def logs():
   print((k+"\n["+p+"1"+k+"]"+p+" Login Pakai Token"))
   print((k+"["+p+"2"+k+"]"+p+" Login Pakai Cookies"))
   print((k+"["+p+"0"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
-  sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+  sek=input(k+"\n["+p+"•"+k+"]"+p+" Menu : ")
   if sek=="":
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
@@ -323,7 +323,7 @@ def menu():
         negara = "None"
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+ Ngentod" ]"+p))
+    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" ]"+p))
     print((k+"\n["+p+"•"+k+"]"+p+" ID : "+id))
     print((k+"["+p+"•"+k+"]"+p+" IP : "+ip))
     print((k+"["+p+"•"+k+"]"+p+" Status      : "+m+"Premium/Forever"+p))
@@ -341,7 +341,7 @@ def menu():
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+	r=input(k+"\n["+p+"•"+k+"]"+p+" Menu : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
