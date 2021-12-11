@@ -34,16 +34,16 @@ else:
 
 def banner():
     print("""\x1b[0;93m   ______     __ __       __
-\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;37m|| By Aang-XD
+\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;37m|| Create By Aang-XD
 \x1b[0;93m / /   / ___/ // /_/ ___/ //_/\x1b[0;37m|| Yt : Aang-XD
 \x1b[0;93m/ /___/ /  /__  __/ /__/ ,<   \x1b[0;37m|| Wa : 089524163441
 \x1b[0;93m\____/_/\x1b[0;37mv1.9 \x1b[0;33m/_/  \___/_/|_|  \x1b[0;37m|| Tm : TDK
-\x1b[0;97m╔════════════════════════════════════════════════╗
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Author   : Aang Ardiansyah-XD              ║
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Github   : Github.com/AngCyber             ║
-\x1b[0;96m╠═[\x1b[0;93m•\x1b[0;97m] Facebook1 : Saya Aang               ║
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Facebook2 : Why Aang Ardiansyah           ║
-\x1b[0;97m╚════════════════════════════════════════════════╝
+\x1b[0;97m╔══════════════════════════════════════════════════╗
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Author    : Aang Ardiansyah-XD               ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Github    : Github.com/AngCyber              ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Facebook1 : Saya Aang                       ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m] Facebook2 : Why Aang Ardiansyah              ║
+\x1b[0;97m╚══════════════════════════════════════════════════╝
 """)
 host="https://mbasic.facebook.com"
 ok = []
