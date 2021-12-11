@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #-*-coding:utf-8-*-
-# RenoTZY
+# Aang Ardiansyah-XD
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,concurrent.futures,json,ipaddress
 from random import randint
@@ -33,17 +33,16 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""\x1b[0;93m ______   _______   _____         __    __   ____    ______
-\x1b[0;93m|____  | |  ___  | |  _  |       |  \  /  | |  _ \  |  ____|
-\x1b[0;93m ____| | | |   | | | |_| |       |   \/   | | |_\ \ | |____
-\x1b[0;93m|  __  | | |   | | |___  |       | |\  /| | |  _  | |  ____|
-\x1b[0;93m| |__| | | |   | |  ___| |  ___  | | \/ | | | |_/ / | |
-\x1b[0;93m|______| |_|   |_| |_____| |___| |_|    |_| |____/  |_|
-\x1b[0;97m╔══════════════════════════════════════════════════════════╗
-\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Author   : Aang Ardiansyah-XD                        ║
-\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Github   : Github.com/AngCyber                       ║
-\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Facebook : Saya Aang & Why Aang Ardiansyah           ║
-\x1b[0;97m╚══════════════════════════════════════════════════════════╝
+    print("""\x1b[0;93m   ______     __ __       __
+\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;37m|| SELAMAT
+\x1b[0;93m / /   / ___/ // /_/ ___/ //_/\x1b[0;37m|| MENGGUNAKAN
+\x1b[0;93m/ /___/ /  /__  __/ /__/ ,<   \x1b[0;37m|| SEMOGA
+\x1b[0;93m\____/_/\x1b[0;37mv1.9 \x1b[0;33m/_/  \___/_/|_|  \x1b[0;37m|| BERHASIL
+\x1b[0;97m╔════════════════════════════════════════════════╗
+\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Author   : Aang Ardiansyah-XD              ║
+\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Github   : Github.com/AngCyber             ║
+\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Facebook : Why Aang Ardiansyah ║
+\x1b[0;97m╚════════════════════════════════════════════════╝
 """)
 host="https://mbasic.facebook.com"
 ok = []
@@ -323,25 +322,25 @@ def menu():
         negara = "None"
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" ]"+p))
-    print((k+"\n["+p+"•"+k+"]"+p+" ID : "+id))
-    print((k+"["+p+"•"+k+"]"+p+" IP : "+ip))
-    print((k+"["+p+"•"+k+"]"+p+" Status      : "+m+"Premium/Forever"+p))
-    print((k+"["+p+"•"+k+"]"+p+" Bergabung : "+durasi))
-    print((k+"["+p+"•"+k+"]"+p+" Crack       : "+negara))
-    print((k+"\n["+p+"1"+k+"]"+p+" Crack ID Dari Teman Publik"))
-    print((k+"["+p+"2"+k+"]"+p+" Crack ID Dari Follower"))
-    print((k+"["+p+"3"+k+"]"+p+" Crack ID Dari Like Postingan"))
-    print((k+"["+p+"4"+k+"]"+p+" Crack Melalui Nomor Telepon"))
-    print((k+"["+p+"5"+k+"]"+p+" Crack Melalui Email"))
-    print((k+"["+p+"6"+k+"]"+p+" Ambil Data Target"))
-    print((k+"["+p+"7"+k+"]"+p+" Lihat Hasil Crack"))
-    print((k+"["+p+"8"+k+"]"+p+" Cek User Agent"))
-    print((k+"["+p+"0"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
+    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" ]"+p));time.sleep(0.03)
+    print((k+"\n["+p+"•"+k+"]"+p+" ID : "+id));time.sleep(0.03)
+    print((k+"["+p+"•"+k+"]"+p+" IP : "+ip));time.sleep(0.03)
+    print((k+"["+p+"•"+k+"]"+p+" Status      : "+h+"Premium/Forever"+p));time.sleep(0.03)
+    print((k+"["+p+"•"+k+"]"+p+" Bergabung : "+durasi));time.sleep(0.03)
+    print((k+"["+p+"•"+k+"]"+p+" Crack       : "+negara));time.sleep(0.03)
+    print((k+"\n["+p+"1"+k+"]"+p+" Crack ID Dari Teman Publik"));time.sleep(0.03)
+    print((k+"["+p+"2"+k+"]"+p+" Crack ID Dari Follower"));time.sleep(0.03)
+    print((k+"["+p+"3"+k+"]"+p+" Crack ID Dari Like Postingan"));time sleep(0.03)
+    print((k+"["+p+"4"+k+"]"+p+" Crack Melalui Nomor Telepon"));time.sleep(0.03)
+    print((k+"["+p+"5"+k+"]"+p+" Crack Melalui Email"));time sleep(0.03)
+    print((k+"["+p+"6"+k+"]"+p+" Ambil Data Target"));time.sleep(0.03)
+    print((k+"["+p+"7"+k+"]"+p+" Lihat Hasil Crack"));time.sleep(0.03)
+    print((k+"["+p+"8"+k+"]"+p+" Cek User Agent"));time.sleep(0.03)
+    print((k+"["+p+"0"+k+"]"+p+" Keluar (Ahh Ngecrot)"));time.sleep(0.03)
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n["+p+"•"+k+"]"+p+" Menu : ")
+	r=input(k+"\n["+p+"•"+k+"]"+p+" Menu : ");time.sleep(0.03)
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
