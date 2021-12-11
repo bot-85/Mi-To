@@ -813,7 +813,7 @@ class crack:
 		self.ko=0
 		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+"  Pilih : ")
+			f=input(k+"["+p+"•"+k+"] "+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -900,7 +900,7 @@ class crackttl:
 		self.ko=0
 		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
+			f=input(k+"["+p+"•"+k+"] "+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
