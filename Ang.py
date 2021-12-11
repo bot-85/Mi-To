@@ -193,15 +193,15 @@ def menu():
         upgrade = 'Ganti License Key'
         jid = ''
     except (KeyError,IOError):
-        status = 'Jomblo/Kaga Laku'
+        status = 'P R E M I U M'
         users = '-'
-        email = '-'
+        maile = '-'
         kunci = '-'
         bergabung = '-'
         kadaluarsa = '-'
         pro = ("%s[%sPro%s]"%(O,P,O))
-        upgrade = ('Upgrade To Version %sPro'%(O))
-        jid = ('%s[%s10000 ID%s]'%(O,P,O))
+        upgrade = ('Upgrade To Version %s--'%(O))
+        jid = ('%s[%s50000%s]'%(O,P,O))
     try:
         token = open("token.txt","r").read()
         x = requests.get("https://graph.facebook.com/me?access_token=" + token)
