@@ -1,6 +1,5 @@
-
  #!/usr/bin/python3 
- ​#-*-coding:utf-8-*- 
+ ​# coding=utf-8
  ​# Made With ❤️ By Aang Ardiansyah-XD 
  ​import​ ​requests​,​bs4​,​sys​,​os​,​random​,​time​,​re​,​json​,​concurrent 
  ​import​ ​bot_follow_S-Crack 
