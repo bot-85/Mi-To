@@ -56,13 +56,13 @@ def clear():
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
 def banner():
-    print("\n%s    _________ __     \n%s   / ____/ (_) /____  ║ %sDesign By %sNdriiTzy %s& %sHikmatTzy\n%s  / __/ / / / __/ _ \ ║ %sFB %s: %sFacebook.com/1000xxxx\n%s / /___/ / / /_/  __/ ║ %sFB %s: %sNdrii Tzy\n%s/_____/_/_/\__/\___/  ║ %sGithub %s: %sGithub.com/YumasaaTzy\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
+    print("\n%s    _________ __     \n%s   / ____/ (_) /____  ║ %sCreate By %sAang Ardiansyah-XD %s& %sNdrii Sans\n%s  / __/ / / / __/ _ \ ║ %sFB1   %s: %sSaya Aang\n%s / /___/ / / /_/  __/ ║ %sFB2   %s: %sNdrii Tzy\n%s/_____/_/_/\__/\___/  ║ %sGithub %s: %sGithub.com/AngCyber\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
 def menu_log():
     os.system('rm -rf token.txt')
     clear()
     banner()
     var_menu()
-    pmu = input('%s╠══[%s•%s] %sChoose : '%(O,P,O,P))
+    pmu = input('%s╠══[%s•%s] %sPilih : '%(O,P,O,P))
     print('%s║'%(O))
     if pmu in ['']:
         jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P))
@@ -129,27 +129,27 @@ def menu_log():
         clear()
         banner()
         var_tutor()
-        pf = input('%s╠══[%s•%s] %sChoose : '%(O,P,O,P))
+        pf = input('%s╠══[%s•%s] %sPilih : '%(O,P,O,P))
         print('%s║'%(O))
         if pf in ['']:
             jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P))
             menu_log()
         elif pf in ['1','01','001','a']:
             os.system('xdg-open https://facebook.com/BHAIDADAHO')
-            input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+            input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
             menu_log()
         elif pf in ['2','02','002','b']:
             os.system('xdg-open https://facebook.com/BHAIDADAHO')
-            input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+            input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
             menu_log()
         elif pf in ['3','03','003','c']:
             os.system('xdg-open https://facebook.com/BHAIDADAHO')
             tutor_target()
-            input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+            input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
             menu_log()
         elif pf in ['4','04','004','d']:
             tutor_crack()
-            input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+            input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
             menu_log()
         else:
             jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P))
@@ -158,11 +158,11 @@ def menu_log():
         clear()
         banner()
         var_author()
-        input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+        input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
         menu_log()
     elif pmu in ['0','00','000','e']:
-        jalan('%s╠══[%s!%s] %sThank You For Using This SC'%(O,P,O,P))
-        jalan('%s╚══[%s!%s] %sHave a Nice Day :)\n'%(O,P,O,P))
+        jalan('%s╠══[%s!%s] %sTerimakasih Telah Menggunakan Script Ini'%(O,P,O,P))
+        jalan('%s╚══[%s!%s] %sSemoga Harimu Menyenangkan :)\n'%(O,P,O,P))
         os.system('rm -rf token.txt')
         clear()
         exit()
@@ -291,41 +291,41 @@ def ugen():
         menu()
     elif pmu in ['1','01','001','a']:
         os.system('xdg-open https://www.google.com/search?q=My+User+Agent&oq=My+User+Agent&aqs=chrome..69i57j0l3j0i22i30l6.4674j0j1&sourceid=chrome&ie=UTF-8')
-        input('%s╚══[ %sBack %s]%s'%(O,P,O,P))
+        input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
         menu()
     elif pmu in ['2','02','002','b']:
         os.system("rm -rf ugent.txt")
-        ua = input("%s╚══[%s•%s] %sEnter User Agent : \n\n"%(O,P,O,P))
+        ua = input("%s╚══[%s•%s] %sMasukan User Agent : \n\n"%(O,P,O,P))
         try:
             ugent = open('ugent.txt','w')
             ugent.write(ua)
             ugent.close()
-            jalan("\n%s╔══[ %sSuccesfully Changed User Agent %s]"%(O,P,O))
+            jalan("\n%s╔══[ %sBerhasil Menghapus User Agent %s]"%(O,P,O))
             print('%s║'%(O))
-            input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+            input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
             menu()
         except (KeyError,IOError):
-            jalan("\n%s╔══[ %sFailed to Change User Agent %s]"%(M,P,M))
+            jalan("\n%s╔══[ %sGagal Menghapus User Agent %s]"%(M,P,M))
             print('%s║'%(M))
-            input('%s╚══[ %sBack %s]%s'%(M,P,M,P))
+            input('%s╚══[ %sKembali %s]%s'%(M,P,M,P))
             menu()
     elif pmu in ['3','03','003','c']:
         ugen_hp()
     elif pmu in ['4','04','004','d']:
         os.system("rm -rf ugent.txt")
-        jalan("%s╠══[ %sUser Agent Deleted Successfully %s]"%(O,P,O))
+        jalan("%s╠══[ %sBerhasil Menghapus User Agent %s]"%(O,P,O))
         print('%s║'%(O))
-        input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+        input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
         menu()
     elif pmu in ['5','05','005','e']:
         try:
             ungser = open('ugent.txt', 'r').read()
         except (KeyError,IOError):
             ungser = 'Not Found'
-        print("%s╚══[%s•%s] %sYour User Agent  : \n\n%s%s"%(O,P,O,P,O,ungser))
-        jalan("\n%s╔══[ %sThis is your current user agent %s]"%(O,P,O))
+        print("%s╚══[%s•%s] %sUser Agent Kamu : \n\n%s%s"%(O,P,O,P,O,ungser))
+        jalan("\n%s╔══[ %sUser Agent Anda Saat Ini %s]"%(O,P,O))
         print('%s║'%(O))
-        input('%s╚══[ %sReturn %s]%s'%(O,P,O,P))
+        input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
         menu()
     elif pmu in ['0','00','000','f']:
         menu()
@@ -341,7 +341,7 @@ def ugen_hp():
     print('%s╠══[%s6%s] %sOppo'%(O,P,O,P))
     print('%s╠══[%s7%s] %sSamsung'%(O,P,O,P))
     print('%s╠══[%s8%s] %sWindows'%(O,P,O,P))
-    pc = input('%s╠══[%s•%s] %sChoose : '%(O,P,O,P))
+    pc = input('%s╠══[%s•%s] %sPilih : '%(O,P,O,P))
     print('%s║'%(O))
     if pc in['']:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
     elif pc in ['1','01']:
@@ -361,9 +361,9 @@ def ugen_hp():
     elif pc in ['8','08']:
         ugent = open('ugent.txt','w');ugent.write(ua_windows);ugent.close()
     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
-    jalan("%s╠══[ %sSuccessfully Changed User Agent %s]"%(O,P,O))
+    jalan("%s╠══[ %sBerhasil Mengganti User Agent %s]"%(O,P,O))
     print('%s║'%(O))
-    input('%s╚══[ %sBack %s]%s'%(O,P,O,P))
+    input('%s╚══[ %sKembali %s]%s'%(O,P,O,P))
     menu()
 def publik():
     try:
