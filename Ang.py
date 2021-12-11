@@ -56,7 +56,7 @@ def clear():
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
 def banner():
-    print("\n%s    _________ __     \n%s   / ____/ (_) /____  ║ %sCreate By %sAang Ardiansyah-XD %s& %sNdrii Sans\n%s  / __/ / / / __/ _ \ ║ %sFB1   %s: %sSaya Aang\n%s / /___/ / / /_/  __/ ║ %sFB2   %s: %sNdrii Tzy\n%s/_____/_/_/\__/\___/  ║ %sGithub %s: %sGithub.com/AngCyber\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
+    print("\n%s    _________ __     \n%s   / ____/ (_) /____  ║ %sCreate By %sAang-XD %s& %sNdrii Sans\n%s  / __/ / / / __/ _ \ ║ %sFB1    %s: %sSaya Aang\n%s / /___/ / / /_/  __/ ║ %sFB2    %s: %sNdrii Tzy\n%s/_____/_/_/\__/\___/  ║ %sGithub %s: %sGithub.com/AngCyber\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
 def menu_log():
     os.system('rm -rf token.txt')
     clear()
