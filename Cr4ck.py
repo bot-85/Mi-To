@@ -42,7 +42,7 @@ def banner():
 \x1b[0;97m╔══════════════════════════════════════════════════════════╗
 \x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Author   : Aang Ardiansyah-XD                        ║
 \x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Github   : Github.com/AngCyber                       ║
-\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Facebook : Saya Aang & Why Aang Ardiansyah               ║
+\x1b[0;97m╠═[\x1b[1;93m•\x1b[0;33m]\x1b[0;37m Facebook : Saya Aang & Why Aang Ardiansyah            ║
 \x1b[0;97m╚══════════════════════════════════════════════════════════╝
 """)
 host="https://mbasic.facebook.com"
