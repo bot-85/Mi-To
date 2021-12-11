@@ -325,7 +325,7 @@ def menu():
     print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" ]"+p));time.sleep(0.03)
     print((k+"\n["+p+"•"+k+"]"+p+" ID : "+id));time.sleep(0.03)
     print((k+"["+p+"•"+k+"]"+p+" IP : "+ip));time.sleep(0.03)
-    print((k+"["+p+"•"+k+"]"+p+" Status      : "+h+"Premium/Forever"+p));time.sleep(0.03)
+    print((k+"["+p+"•"+k+"]"+p+" Status      : "+m+"Premium/Forever"+p));time.sleep(0.03)
     print((k+"["+p+"•"+k+"]"+p+" Bergabung : "+durasi));time.sleep(0.03)
     print((k+"["+p+"•"+k+"]"+p+" Crack       : "+negara));time.sleep(0.03)
     print((k+"\n["+p+"1"+k+"]"+p+" Crack ID Dari Teman Publik"));time.sleep(0.03)
