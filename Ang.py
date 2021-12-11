@@ -193,15 +193,15 @@ def menu():
         upgrade = 'Ganti License Key'
         jid = ''
     except (KeyError,IOError):
-        status = 'Pengguna Gratis'
-        users = '-'
-        maile = '-'
-        kunci = '-'
-        bergabung = '-'
-        kadaluarsa = '-'
+        status = 'Premium/Pro'
+        users = 'Aang Ardiansyah-XD'
+        email = 'BacotBrotherhood@gmail.com'
+        kunci = '87349-5B7F6-38224-A28E0'
+        bergabung = '12/12/2021'
+        kadaluarsa = '09/05/2030'
         pro = ("%s[%sPro%s]"%(O,P,O))
         upgrade = ('Upgrade To Version %sPro'%(O))
-        jid = ('%s[%s9999 ID%s]'%(O,P,O))
+        jid = ('%s[%s10000 ID%s]'%(O,P,O))
     try:
         token = open("token.txt","r").read()
         x = requests.get("https://graph.facebook.com/me?access_token=" + token)
@@ -859,7 +859,7 @@ class crack:
         self.cp = []
         self.ko = 0
         print('%s║'%(O))
-        print('%s╠══[%s•%s] %sIngin Menggunakan Kata Sandi Manual [d/m]'%(O,P,O,P))
+        print('%s╠══[%s•%s] %sIngin Menggunakan Kata Sandi Manual? [d/m]'%(O,P,O,P))
         while True:
             f = input('%s╠══[%s•%s] %sPilih : '%(O,P,O,P))
             if f=="":
@@ -1109,7 +1109,7 @@ class crack:
                 else:continue
                     
             self.ko+=1
-            print("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(O,P,O,P,self.ko,len(self.fl),O,P,len(self.ada),O,P,len(self.cp),O,P), end=' ');sys.stdout.flush()
+            print("\r%s[%sCracking%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(O,P,O,P,self.ko,len(self.fl),O,P,len(self.ada),O,P,len(self.cp),O,P), end=' ');sys.stdout.flush()
         except:
             self.api(fl)
     def api_opsi(self,fl):
@@ -1618,15 +1618,15 @@ def start_method():
     print('%s╠══[%s3%s] %sMetode Free.facebook'%(O,P,O,P))
 def start_methodezz():
     print('%s║'%(O))
-    print('%s╠══[%s1%s] %sCrack Cepat %s[%s6 Sandi%s]'%(O,P,O,P,O,P,O))
-    print('%s╠══[%s2%s] %sCrack Lambat %s[%s9 Sandi%s]'%(O,P,O,P,O,P,O))
-    print('%s╠══[%s3%s] %sCrack Sangat Lambat%s[%s12 Sandi%s]'%(O,P,O,P,O,P,O))
+    print('%s╠══[%s1%s] %sCrack Cepat %s[%sHasil Sedikit%s]'%(O,P,O,P,O,P,O))
+    print('%s╠══[%s2%s] %sCrack Lambat %s[%sHasil Banyak%s]'%(O,P,O,P,O,P,O))
+    print('%s╠══[%s3%s] %sCrack Sangat Lambat %s[%sHasil Lebih Banyak%s]'%(O,P,O,P,O,P,O))
     print('%s╠══[%s4%s] %sCrack Password Gabungan'%(O,P,O,P))
 def started():
     print('%s║'%(O))
     print('%s╠══[%s•%s] %sCrack Berjalan...'%(O,P,O,P))
-    print('%s╠══[%s•%s] %sAkun [OK] Saved In OK/%s.txt'%(O,P,O,P,tanggal))
-    print('%s╠══[%s•%s] %sAkun [CP] Saved In CP/%s.txt'%(O,P,O,P,tanggal))
+    print('%s╠══[%s•%s] %sAkun [OK] Tersimpan  Di OK/%s.txt'%(O,P,O,P,tanggal))
+    print('%s╠══[%s•%s] %sAkun [CP] Tersimpan Di CP/%s.txt'%(O,P,O,P,tanggal))
     print('%s╚══[%s•%s] %sAktifkan Mode Pesawat [5 Detik Saja] Setiap 5 Menit\n'%(O,P,O,P))
 def folder():
     try:os.mkdir("CP")
