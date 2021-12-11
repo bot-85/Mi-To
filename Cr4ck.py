@@ -123,11 +123,11 @@ def gets_dict_cookies(cookies):
 def country():
     os.system("clear")
     banner()
-    print("\n%s[%s Please select a country %s]\n"%(k,p,k))
-    print("%s[%s01%s] %sIndonesia (Warga Bar-Bar)"%(k,p,k,p))
-    print("%s[%s02%s] %sIndian"%(k,p,k,p))
-    print("%s[%s03%s] %sPakistan"%(k,p,k,p))
-    print("%s[%s04%s] %sUSA (American)"%(k,p,k,p))
+    print("\n%s[%s Mohon Pilih Negara %s]\n"%(k,p,k))
+    print("%s[%s1%s] %sIndonesia"%(k,p,k,p))
+    print("%s[%s2%s] %sIndian"%(k,p,k,p))
+    print("%s[%s3%s] %sPakistan"%(k,p,k,p))
+    print("%s[%s4%s] %sUSA (American)"%(k,p,k,p))
     choose_country()
     
 def choose_country():
@@ -192,9 +192,9 @@ def choose_country():
 def logs():
   os.system("clear")
   banner()
-  print((k+"\n["+p+"01"+k+"]"+p+" Login Pakai Token"))
-  print((k+"["+p+"02"+k+"]"+p+" Login Pakai Cookies"))
-  print((k+"["+p+"00"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
+  print((k+"\n["+p+"1"+k+"]"+p+" Login Pakai Token"))
+  print((k+"["+p+"2"+k+"]"+p+" Login Pakai Cookies"))
+  print((k+"["+p+"0"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
   sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
   if sek=="":
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
@@ -323,7 +323,7 @@ def menu():
         negara = "None"
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" "Ngentod ]+p))
+    print((k+"\n[ "+p+"Selamat Datang "+a["name"]+k+" ]"+p))
     print((k+"\n["+p+"•"+k+"]"+p+" ID : "+id))
     print((k+"["+p+"•"+k+"]"+p+" IP : "+ip))
     print((k+"["+p+"•"+k+"]"+p+" Status          : "+m+"Premium/Forever"+p))
@@ -341,7 +341,7 @@ def menu():
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n["+p+"•"+k+"]"+p+"Choose : ")
+	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
