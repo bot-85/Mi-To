@@ -82,7 +82,7 @@ def masuk():
     	print("%s╚═[•] Isi yang benar kentod ] "%(M));exit()
     elif rom in ('1','01'):
         jalan("\n%s╔═[%s•%s] Wajib gunakan akun tumbal dilarang akun utama!!"%(P,M,P))
-    	romz = raw_input('%s╚═[?] Masukan token :  %s'%(K,H))
+    	romz = raw_input('%s╚═[?] Masukan token :  %s'%(P,K))
         if romz in(""):
         	print("%s╚═[•] Isi yang benar kentod ] "%(M));exit()
     	try:
@@ -329,7 +329,7 @@ class ngentod:
     	try:
     	    ua = open('data/ua.txt', 'r').read()
         except IOError:
-        	ua = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
+        	ua = 'Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.11;]'
         global ok,cp,loop
         for pw in zona:
             pw = pw.lower()
@@ -626,18 +626,19 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print ('%s╔═[ Selamat Datang %s%s%s Ngentod ]'%(P,K,nama,P));time.sleep(0.04)
-    print ('╠═[%s1%s] Dump ID From Publik'%(K,P)) ;time.sleep(0.04)
-    print ('╠═[%s2%s] Dump ID From Followers'%(K,P));time.sleep(0.04)
-    print ('╠═[%s3%s] Dump ID From Reaction Post'%(K,P));time.sleep(0.04)
-    print ('╠═[%s4%s] Crack Akun Instagram '%(K,P));time.sleep(0.04)
-    print ('╠═[%s5%s] %sMulai Crack %s'%(K,P,H,P));time.sleep(0.04)
-    print ('╠═[%s6%s] Setting User Agent'%(K,P));time.sleep(0.04)
-    print ('╠═[%s7%s] Cek Hasil Crack'%(K,P));time.sleep(0.04)
+    print ('%s╔═[ Selamat Datang %s%s%s Ngentod ]'%(P,K,nama,P))
+    print ('%s║%s'%(P,K))
+    print ('╠═[%s1%s] Dump ID From Publik'%(K,P))
+    print ('╠═[%s2%s] Dump ID From Followers'%(K,P))
+    print ('╠═[%s3%s] Dump ID From Reaction Post'%(K,P))
+    print ('╠═[%s4%s] Crack Akun Instagram '%(K,P))
+    print ('╠═[%s5%s] %sMulai Crack %s'%(K,P,H,P))
+    print ('╠═[%s6%s] Setting User Agent'%(K,P))
+    print ('╠═[%s7%s] Cek Hasil Crack'%(K,P))
     #print ('[%s08%s] Gabung group'%(K,P));time.sleep(0.04)
     #print ('[%s09%s] Info script'%(K,P));time.sleep(0.04)
-    print ('╠═[%s0%s] Keluar (Ahh Ngecrot) '%(M,P));time.sleep(0.04)
-    unik = raw_input('%s╚═[•] Menu : %s'%(P,K));time.sleep(0.04)
+    print ('╠═[%s0%s] Keluar (Ahh Ngecrot) '%(M,P))
+    unik = raw_input('%s╚═[•] Menu : %s'%(P,K))
     if unik == '':
         print("%s╚═[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     elif unik in['1','01']:
