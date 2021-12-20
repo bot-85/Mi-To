@@ -65,21 +65,18 @@ def banner():
 \x1b[0;33m   /  ____/   /  \/  /    / --  /  / /__
 \x1b[0;33m  /  /       /  /_/  /   / __  <  /  __/
 \x1b[0;33m /__/       /__/ /__/   /_____/  /__/
-\x1b[0;32m----------------------------------------------------------
+\x1b[0;37m__________________________________________
 \x1b[0;37m╔[ Creator  : Romi Afrizal [\x1b[0;33mMark-Zuck\x1b[0;37m]
 \x1b[0;37m╠[ Compiler : Aang Ardiansyah-XD
 \x1b[0;37m╠[ Github   : Https://github.com/AngCyber
-\x1b[0;37m╠[ Facebook : Clubfunbike [\x1b[0;33mSaya Aang\x1b[0;37m]
-\x1b[0;37m║\x1b[0;32m---------------------------------------------------------
-\x1b[0;37m╠[ Sc ini digunakan untuk crack facebook dan Instagram
-\x1b[0;37m╠[ Untuk crack Instagram support kartu :
-\x1b[0;37m╚[ Axis,Smartfren,Telkomsel Dan Indosat
+\x1b[0;37m╠[ Facebook : Saya Aang & Why Aang Ardiansyah
+\x1b[0;37m║\x1b[0;37m__________________________________________
 """)
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('\n%s╔═[01] Login pakai token \n╠═[02] Cara mendapatkan token \n╚═[%s00%s] Keluar (Ahh Ngecrot)'%(P,M,P))
+    print ('%s╔═[01] Login pakai token ╠═[02] Cara mendapatkan token ╚═[%s00%s] Keluar (Ahh Ngecrot)'%(P,M,P))
     rom = raw_input('\n%s╠═[••] Menu : %s'%(P,K))
     if rom in(""):
     	print("%s╚═[•] Isi yang benar kentod ] "%(M));exit()
