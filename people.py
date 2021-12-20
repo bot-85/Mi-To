@@ -60,22 +60,22 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;33m    _________ _____   ___ ________ _________
-\x1b[0;33m    __   __  / __  / /  /  __     ) __  ___/
-\x1b[0;33m     /  ____/   /  \/  /    / --  /  / /__
-\x1b[0;33m    /  /       /  /_/  /   / __  <  /  __/
-\x1b[0;33m   /__/       /__/ /__/   /_____/  /__/
-\x1b[0;37m______________________________________________
-\x1b[0;37m[•] Code by : Romi Afrizal & Aang-XD
-\x1b[0;37m[•] Github    : Https://github.com/AngCyber
-\x1b[0;37m[•] Facebook : Saya Aang & Why Aang Ardiansyah
-\x1b[0;37m______________________________________________
+	print("""\x1b[0;93m   _________ _____   ___ ________ _________
+\x1b[0;93m   __   __  / __  / /  /  __     ) __  ___/
+\x1b[0;93m    /  ____/   /  \/  /    / --  /  / /__
+\x1b[0;93m   /  /       /  /_/  /   / __  <  /  __/
+\x1b[0;93m  /__/       /__/ /__/   /_____/  /__/
+\x1b[0;97m═══════════════════════════════════════════════
+\x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mRomi Afrizal & Aang-XD
+\x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;93mHttps://github.com/AngCyber
+\x1b[0;92m[•] \x1b[0;97mFacebook : \x1b[0;93mSaya Aang & Why Aang Ardiansyah
+\x1b[0;97m═══════════════════════════════════════════════
 """)
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('%s╔═[%s1%s]%s Login pakai token \n%s╠═[%s2%s]%s Cara mendapatkan token \n╠═[%s0%s] Keluar (Ahh Ngecrot)'%(K,M,K))
+    print ('%s╔═[1] Login pakai token \n╠═[2] Cara mendapatkan token \n╠═[%s0%s] Keluar [\x1b[0;92mAhh Ngecrot]'%(K,M,K))
     print ('%s║%s'%(K,P))
     rom = raw_input('%s╚═[•] Menu : %s'%(K,P))
     if rom in(""):
