@@ -628,28 +628,28 @@ def menu():
     try:
     	romz = open('token.txt', 'r').read()
     except IOError:
-        print ("%s╚═[!] WADUH TOKEN INVALID NGAB!! "%(M));jeda(2);os.system('rm -rf token.txt');masuk()
+        print ("%s╚═[!] WADUH TOKEN INVALID NGAB!! "%(M));jeda(1);os.system('rm -rf token.txt');masuk()
     try:
         r = requests.get('https://graph.facebook.com/me?access_token='+romz,headers=header)
         a = json.loads(r.text)
         nama = a["name"]
     except KeyError:
-        print("%s╚═[!] WADUH TOKEN INVALID NGAB!! "%(M));jeda(2);os.system('rm -rf data/token.txt && rm -rf data/cookies');masuk()
+        print("%s╚═[!] WADUH TOKEN INVALID NGAB!! "%(M));jeda(1);os.system('rm -rf data/token.txt && rm -rf data/cookies');masuk()
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print ('\n%s╠═[ Selamat Datang %s%s%s Ngentod ] \n'%(P,K,nama,P));time.sleep(0.04)
-    print ('╔═[%s01%s] Dump ID From Publik'%(K,P)) ;time.sleep(0.04)
-    print ('╠═[%s02%s] Dump ID From Followers'%(K,P));time.sleep(0.04)
-    print ('╠═[%s03%s] Dump ID From Reaction Post'%(K,P));time.sleep(0.04)
-    print ('╠═[%s04%s] Crack Akun Instagram '%(K,P));time.sleep(0.04)
-    print ('╠═[%s05%s] %sMulai Crack %s'%(K,P,H,P));time.sleep(0.04)
-    print ('╠═[%s06%s] Setting User Agent'%(K,P));time.sleep(0.04)
-    print ('╠═[%s07%s] Cek Hasil Crack'%(K,P));time.sleep(0.04)
+    print ('%s╔═[ Selamat Datang %s%s%s Ngentod ]'%(P,K,nama,P));time.sleep(0.04)
+    print ('╠═[%s1%s] Dump ID From Publik'%(K,P)) ;time.sleep(0.04)
+    print ('╠═[%s2%s] Dump ID From Followers'%(K,P));time.sleep(0.04)
+    print ('╠═[%s3%s] Dump ID From Reaction Post'%(K,P));time.sleep(0.04)
+    print ('╠═[%s4%s] Crack Akun Instagram '%(K,P));time.sleep(0.04)
+    print ('╠═[%s5%s] %sMulai Crack %s'%(K,P,H,P));time.sleep(0.04)
+    print ('╠═[%s6%s] Setting User Agent'%(K,P));time.sleep(0.04)
+    print ('╠═[%s7%s] Cek Hasil Crack'%(K,P));time.sleep(0.04)
     #print ('[%s08%s] Gabung group'%(K,P));time.sleep(0.04)
     #print ('[%s09%s] Info script'%(K,P));time.sleep(0.04)
-    print ('╚═[%s00%s] Keluar (Ahh Ngecrot) '%(M,P));time.sleep(0.04)
-    unik = raw_input('\n%s╠═[••] Menu : %s'%(P,K));time.sleep(0.04)
+    print ('╠═[%s0%s] Keluar (Ahh Ngecrot) '%(M,P));time.sleep(0.04)
+    unik = raw_input('%s╚═[•] Menu : %s'%(P,K));time.sleep(0.04)
     if unik == '':
         print("%s╚═[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     elif unik in['1','01']:
