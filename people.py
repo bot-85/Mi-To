@@ -60,25 +60,24 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;33m  _________ _____   ___ ________ _________
-\x1b[0;33m  __   __  / __  / /  /  __     ) __  ___/
-\x1b[0;33m   /  ____/   /  \/  /    / --  /  / /__
-\x1b[0;33m  /  /       /  /_/  /   / __  <  /  __/
-\x1b[0;33m /__/       /__/ /__/   /_____/  /__/
-\x1b[0;37m__________________________________________
-\x1b[0;37m╔[ Creator  : Romi Afrizal [\x1b[0;33mMark-Zuck\x1b[0;37m]
-\x1b[0;37m╠[ Compiler : Aang Ardiansyah-XD
-\x1b[0;37m╠[ Github   : Https://github.com/AngCyber
-\x1b[0;37m╠[ Facebook : Saya Aang & Why Aang Ardiansyah
-\x1b[0;37m║\x1b[0;37m__________________________________________
+	print("""\x1b[0;33m    _________ _____   ___ ________ _________
+\x1b[0;33m    __   __  / __  / /  /  __     ) __  ___/
+\x1b[0;33m     /  ____/   /  \/  /    / --  /  / /__
+\x1b[0;33m    /  /       /  /_/  /   / __  <  /  __/
+\x1b[0;33m   /__/       /__/ /__/   /_____/  /__/
+\x1b[0;37m______________________________________________
+\x1b[0;37m[•] Code by : Romi Afrizal & Aang-XD
+\x1b[0;37m[•] Github    : Https://github.com/AngCyber
+\x1b[0;37m[•] Facebook : Saya Aang & Why Aang Ardiansyah
+\x1b[0;37m______________________________________________
 """)
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('%s╔═[01] Login pakai token \n╠═[02] Cara mendapatkan token \n╚═[%s00%s] Keluar (Ahh Ngecrot)'%(P,M,P))
-    print ('%s║%s'%(K,P))
-    rom = raw_input('%s╠═[••] Menu : %s'%(P,K))
+    print ('%s╔═[1] Login pakai token \n╠═[2] Cara mendapatkan token \n╠═[%s0%s] Keluar (Ahh Ngecrot)'%(P,M,P))
+    print ('%s║%s'%(P))
+    rom = raw_input('%s╚═[•] Menu : %s'%(P,K))
     if rom in(""):
     	print("%s╚═[•] Isi yang benar kentod ] "%(M));exit()
     elif rom in ('1','01'):
@@ -88,7 +87,8 @@ def masuk():
         	print("%s╚═[•] Isi yang benar kentod ] "%(M));exit()
     	try:
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
-            print ('\n%s╚═[✓] Login Berhasil, Subscribe Channel Gw Dulu Yaa ] '%(H));jeda(5)
+            print ('%s║%s'%(P))
+            print ('%s╚═[✓] Login Berhasil, Subscribe Channel Gw Dulu Yaa ] '%(H));jeda(5)
             open('token.txt', 'w').write(romz);login_xx()
             os.system('xdg-open https://youtube.com/channel/UCqwjydkaE3y0qo-3Yl3yL3A')
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
