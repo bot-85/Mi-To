@@ -699,7 +699,7 @@ def hasill(c):
 	elif c in["2","02"]:
 		print "\n%s╔══[1] Hasil crack akun %sOK "%(P,H)
         print "%s╠══[2] Hasil crack akun %sCP "%(P,K)
-        print "%s║%s'%(P,K))
+        print "%s║%s"%(P,K))
         while True:
         	rom = raw_input('%s╚══[•] Menu : %s'%(P,K))
 		if rom in['1','01']:
