@@ -60,11 +60,11 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;93m   _________ _____   ___ ________ _________
-\x1b[0;92m   __   __  / __  / /  /  __     ) __  ___/
-\x1b[0;96m    /  ____/   /  \/  /    / --  /  / /__
+	print("""\x1b[0;92m   _________ _____   ___ ________ _________
+\x1b[0;94m   __   __  / __  / /  /  __     ) __  ___/
+\x1b[0;92m    /  ____/   /  \/  /    / --  /  / /__
 \x1b[0;94m   /  /       /  /_/  /   / __  <  /  __/
-\x1b[0;93m  /__/ \x1b[0;92mV2.7  \x1b[0;93m/__/ /__/   /_____/  /__/
+\x1b[0;94m  /__/ \x1b[0;92mV2.7  \x1b[0;94m/__/ /__/   /_____/  /__/
 \x1b[0;97m═════════════════════════════════════════════════
 \x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;97mAang-XD & Romi AF
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
@@ -633,9 +633,9 @@ def menu():
     banner()
     print ('%s╔══[ Selamat Datang %s%s%s Ngentod ]'%(P,K,nama,P))
     print ('%s║%s'%(P,P))
-    print ('╠══[%s1%s] Dump ID From Publik'%(K,P))
-    print ('╠══[%s2%s] Dump ID From Followers'%(K,P))
-    print ('╠══[%s3%s] Dump ID From Reaction Post'%(K,P))
+    print ('╠══[%s1%s] Dump ID Dari Teman Publik'%(K,P))
+    print ('╠══[%s2%s] Dump ID Dari Followers'%(K,P))
+    print ('╠══[%s3%s] Dump ID Dari React Postingan'%(K,P))
     print ('╠══[%s4%s] Crack Akun Instagram '%(K,P))
     print ('╠══[%s5%s] %sMulai Crack %s'%(K,P,H,P))
     print ('╠══[%s6%s] Setting User Agent'%(K,P))
@@ -644,9 +644,9 @@ def menu():
     #print ('[%s09%s] Info script'%(K,P));time.sleep(0.04)
     print ('╠══[%s0%s] Keluar (Ahh Ngecrot) '%(M,P))
     print ('%s║%s'%(P,P))
-    unik = raw_input('%s╠═[•] Menu : %s'%(P,K));time.sleep(0.04)
+    unik = raw_input('%s╚══[•] Menu : %s'%(P,K));time.sleep(0.04)
     if unik == '':
-        print("%s╚═[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
+        print("%s╚══[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     elif unik in['1','01']:
         publik(romz)
     elif unik in['2','02']:
@@ -656,7 +656,7 @@ def menu():
     elif unik in['4','04']:
     	igg()
     elif unik in['5','05']:
-        ngentod().romiy()
+        ngentod().unikers()
     elif unik in['6','06']:
     	useragent()
     elif unik in['7','07']:
