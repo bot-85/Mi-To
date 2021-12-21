@@ -60,11 +60,11 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;93m _________ _____   ___ ________ _________
-\x1b[0;93m __   __  / __  / /  /  __     ) __  ___/\x1b[0;97m|| \x1b[0;93mPantek
-\x1b[0;93m  /  ____/   /  \/  /    / --  /  / /__  \x1b[0;97m|| \x1b[0;93mMulti
-\x1b[0;93m /  /       /  /_/  /   / __  <  /  __/  \x1b[0;97m|| \x1b[0;93mBrute
-\x1b[0;93m/__/ \x1b[0;92mV2.7  \x1b[0;93m/__/ /__/   /_____/  /__/     \x1b[0;97m|| \x1b[0;93mForce
+	print("""\x1b[0;92m _________ _____   ___ ________ _________
+\x1b[0;92m __   __  / __  / /  /  __     ) __  ___/\x1b[0;97m|| \x1b[0;93mPantek
+\x1b[0;92m  /  ____/   /  \/  /    / --  /  / /__  \x1b[0;97m|| \x1b[0;93mMulti
+\x1b[0;92m /  /       /  /_/  /   / __  <  /  __/  \x1b[0;97m|| \x1b[0;93mBrute
+\x1b[0;92m/__/ \x1b[0;93mV2.7  \x1b[0;92m/__/ /__/   /_____/  /__/     \x1b[0;97m|| \x1b[0;93mForce
 \x1b[0;97m══════════════════════════════════════════════════════════════
 \x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mAang-XD \x1b[0;97m& \x1b[0;93mRomi Afrizal
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
