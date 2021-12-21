@@ -678,15 +678,15 @@ def menu():
     if aang == '':
         print("%s╚══[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     elif aang in['1','01']:
-        publik(nisa)
+        publik(romz)
     elif aang in['2','02']:
-        followers(nisa)
+        followers(romz)
     elif aang in['3','03']:
-        postingan(nisa)
+        postingan(romz)
     elif aang in['4','04']:
     	igg()
     elif aang in['5','05']:
-        ngentod().nisa()
+        ngentod().romiy()
     elif aang in['6','06']:
     	useragent()
     elif aang in['7','07']:
