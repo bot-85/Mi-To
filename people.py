@@ -674,31 +674,31 @@ def menu():
     #print ('[%s09%s] Info script'%(K,P));time.sleep(0.04)
     print ('╠══[%s0%s] Keluar (Ahh Ngecrot) '%(M,P))
     print ('%s║%s'%(P,P))
-    aang = raw_input('%s╚══[•] Menu : %s'%(P,K))
-    if aang == '':
+    unik = raw_input('%s╚══[•] Menu : %s'%(P,K))
+    if unik == '':
         print("%s╚══[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
-    elif aang in['1','01']:
+    elif unik in['1','01']:
         publik(romz)
-    elif aang in['2','02']:
+    elif unik in['2','02']:
         followers(romz)
-    elif aang in['3','03']:
+    elif unik in['3','03']:
         postingan(romz)
-    elif aang in['4','04']:
+    elif unik in['4','04']:
     	igg()
-    elif aang in['5','05']:
+    elif unik in['5','05']:
         ngentod().romiy()
-    elif aang in['6','06']:
+    elif unik in['6','06']:
     	useragent()
-    elif aang in['7','07']:
+    elif unik in['7','07']:
     	print "\n%s╔══[1] Hasil crack akun facebook "%(P)
         print "%s╚══[2] Hasil crack akun instagram "%(P)
         c = raw_input('\n%s╠══[•] Menu : %s'%(P,K))
     	hasill(c)
-    elif aang in['8','08']:
+    elif unik in['8','08']:
         os.system("xdg-open https://www.facebook.com/groups/924679595149360")
-    elif aang in['9','09']:
+    elif unik in['9','09']:
         print(ingfo)
-    elif aang in['0','00']:
+    elif unik in['0','00']:
         print ('')
         tik();jeda(1);os.system('rm -rf token.txt')
         jalan('\n%s╚══[✓] berhasil terhapus ]'%(H));exit()
