@@ -218,7 +218,8 @@ class ngentod:
                     print '%s╚══[!] password minimal 6 karakter ]'%(M)
                 else:
                     def aangx(nisa_=None): 
-                        ind = raw_input('\n%s╠[?] metode : %s'%(P,K))
+                        ind = raw_input('\n%s╠══[?] metode : %s'%(P,K))
+                        print '%s║%s'%(P)
                         if ind == '':
                             print("%s╚══[•] Isi yang benar kentod ] "%(M));self.zona()
                         elif ind in ('1', '01'):
@@ -276,10 +277,10 @@ class ngentod:
             print("%s╚══[•] Isi yang benar kentod ] "%(M));jeda(2);menu()
     def langsung(self):
         aang = raw_input('%s╠══[?] metode :%s '%(P,K))
+        print '%s║%s'%(P)
         if aang == '':
             print("%s╚══[•] Isi yang benar kentod ] "%(M));self.langsung()
         elif aang in ('1', '01'):
-        	print '%s║%s'%(P)
             print '%s╠══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
             print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
             print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatkan (3 detik)\n'%(P,M,P);jeda(0.3)
@@ -306,7 +307,6 @@ class ngentod:
                     except: pass
             os.remove(self.apk);exit()
         elif aang in ('2', '02'):
-        	print '%s║%s'%(P)
             print '%s╠══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
             print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
             print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatkan (3 detik)\n'%(P,M,P);jeda(0.3)
@@ -333,7 +333,6 @@ class ngentod:
                     except: pass
             os.remove(self.apk);exit()
         elif aang in ('3', '03'):
-        	print '%s║%s'%(P)
             print '%s╠══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
             print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
             print '%s╚══[%s!%s] jika tidak ada hasil mode pesawatkan (3 detik)\n'%(P,M,P);jeda(0.3)
