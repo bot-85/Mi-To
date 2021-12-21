@@ -60,16 +60,16 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;93m   _________ _____   ___ ________ _________
-\x1b[0;92m   __   __  / __  / /  /  __     ) __  ___/
-\x1b[0;96m    /  ____/   /  \/  /    / --  /  / /__
-\x1b[0;97m   /  /       /  /_/  /   / __  <  /  __/
-\x1b[0;94m  /__/ \x1b[0;92mV2.7  \x1b[0;94m/__/ /__/   /_____/  /__/
-\x1b[0;97m═════════════════════════════════════════════════
-\x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;97mAang-XD & Romi AF
+	print("""\x1b[0;93m _________ _____   ___ ________ _________
+\x1b[0;92m __   __  / __  / /  /  __     ) __  ___/ \x1b[0;97m|| Pantek
+\x1b[0;93m  /  ____/   /  \/  /    / --  /  / /__   \x1b[0;97m|| Multi
+\x1b[0;92m /  /       /  /_/  /   / __  <  /  __/  \x1b[0;97m|| Brute
+\x1b[0;93m/__/ \x1b[0;92mV2.7  \x1b[0;94m/__/ /__/   /_____/  /__/    \x1b[0;97m|| Force
+\x1b[0;97m══════════════════════════════════════════════════════════════════════
+\x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mAang-XD \x1b[0;97m& \x1b[0;93mRomi Afrizal
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
 \x1b[0;92m[•] \x1b[0;97mFacebook : \x1b[0;97mSaya Aang & Why Aang Ardiansyah
-\x1b[0;97m═════════════════════════════════════════════════""")
+\x1b[0;97m══════════════════════════════════════════════════════════════════════""")
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
@@ -200,9 +200,9 @@ class ngentod:
         self.id = []
     def romiy(self):
         try:
-            self.apk = raw_input('\n%s[?] file dump :%s '%(P,K))
+            self.apk = raw_input('\n%s[?] File dump :%s '%(P,K))
             self.id = open(self.apk).read().splitlines()
-            print '%s[%s•%s] total id : %s%s' %(P,K,P,H,len(self.id))
+            print '%s[%s•%s] Total id : %s%s' %(P,K,P,H,len(self.id))
         except:
             print '\n%s[!] File dump tidak ada, dump id dulu lah kentod'%(M)
             raw_input('\n%s[•] %sEnter %s '%(P,K,P));menu()
@@ -210,7 +210,7 @@ class ngentod:
         if unikers in ('Y', 'y'):
             print '\n%s[%s!%s] Gunakan (koma) untuk tanda pemisah sandi '%(P,M,P,H,P)
             while True:
-                pwx = raw_input('%s╚═[?] kata sandi :%s '%(P,K))
+                pwx = raw_input('%s[?] Kata sandi :%s '%(P,K))
                 if pwx == '':
                     print '\n%s[!] jangan kosong kentod'%(M)
                 elif len(pwx)<=5:
@@ -624,7 +624,7 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s[!] Kesalahan koneksi "%(M))
     banner()
-    print ('\n%s> Selamat Datang %s%s%s Ngentod <\n'%(P,K,nama,P));time.sleep(0.04)
+    print ('%s[ Selamat Datang %s%s%s Ngentod ]\n'%(P,K,nama,P));time.sleep(0.04)
     print ('[%s1%s] Dump ID From Publik'%(K,P)) ;time.sleep(0.04)
     print ('[%s2%s] Dump ID From Followers'%(K,P));time.sleep(0.04)
     print ('[%s3%s] Dump ID From Reaction Post'%(K,P));time.sleep(0.04)
