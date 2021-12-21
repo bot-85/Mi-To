@@ -262,10 +262,10 @@ class ngentod:
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
-                    print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack]\n'%(P)
-                    print '\x1b[0;97m[%s1%s] Metode b-api [\x1b[0;92mCepet kaya rosi\x1b[0;97m]'%(K,P)
-                    print '[%s2%s] Metode mbasic [\x1b[0;92mLambat kaya disuruh emak\x1b[0;97m]'%(K,P)
-                    print '[%s3%s] Metode mobile [\x1b[0;92mSangat lambat kaya cewe\x1b[0;97m]'%(K,P)
+            print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack]\n'%(P)
+            print '\x1b[0;97m[%s1%s] Metode b-api [\x1b[0;92mCepet kaya rosi\x1b[0;97m]'%(K,P)
+            print '[%s2%s] Metode mbasic [\x1b[0;92mLambat kaya disuruh emak\x1b[0;97m]'%(K,P)
+            print '[%s3%s] Metode mobile [\x1b[0;92mSangat lambat kaya cewe\x1b[0;97m]'%(K,P)
             self.langsung()
         else:
             print("%s[•] Isi yang benar kentod"%(M));jeda(2);menu()
@@ -734,8 +734,7 @@ def igg():
 		mi.append(bff_2+"_"+str(_i_)+"|"+bff_2)
 		mi.append(bff_2+str(_i_)+"_"+"|"+bff_2)
 	print '\n%s[%s•%s] akun %sOK%s saved in >%s okeh.txt'%(P,K,P,H,P,H);jeda(0.02)
-	print '%s[%s•%s] akun %sCP %ssaved in > %scepeh.txt'%(P,K,P,K,P,K);jeda(0.02)
-	print '[%s!%s] selalu mode pesawat agar tidak %skena spam%s\n'%(M,M);jeda(0.02)
+	print '%s[%s•%s] akun %sCP %ssaved in > %scepeh.txt\n'%(P,K,P,K,P,K);jeda(0.02)
 	with ThreadPoolExecutor(max_workers=30) as log:
 		for ro in mi:
 			try:
