@@ -87,7 +87,7 @@ def masuk():
     	try:
             gas = requests.get('https://graph.facebook.com/me?access_token=%s'%(romz)).json()['name']
             print ('%s\n[✓] Login Berhasil, Subscribe Channel Gw Dulu Yaa ] '%(H));jeda(3)
-            open('token.txt', 'w').write(aang);login_xx()
+            open('token.txt', 'w').write(romz);login_xx()
             os.system('xdg-open https://youtube.com/channel/UCqwjydkaE3y0qo-3Yl3yL3A')
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
         except (KeyError,IOError):
