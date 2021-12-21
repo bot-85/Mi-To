@@ -60,16 +60,16 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-print("""\x1b[0;93m   _________ _____   ___ ________ _________
+	print("""\x1b[0;93m   _________ _____   ___ ________ _________
 \x1b[0;92m   __   __  / __  / /  /  __     ) __  ___/
 \x1b[0;96m    /  ____/   /  \/  /    / --  /  / /__
 \x1b[0;94m   /  /       /  /_/  /   / __  <  /  __/
-\x1b[0;93m  /__/ \x1b[0;92mV2.7  \x1b[0;94m/__/ /__/   /_____/  /__/
-\x1b[0;97m═════════════════════════════════════════════════════════════════════
+\x1b[0;93m  /__/ \x1b[0;92mV2.7  \x1b[0;93m/__/ /__/   /_____/  /__/
+\x1b[0;97m═════════════════════════════════════════════════
 \x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;97mAang-XD & Romi AF
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
 \x1b[0;92m[•] \x1b[0;97mFacebook : \x1b[0;97mSaya Aang & Why Aang Ardiansyah
-\x1b[0;97m═════════════════════════════════════════════════════════════════════
+\x1b[0;97m═════════════════════════════════════════════════
 """)
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
