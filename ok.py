@@ -221,7 +221,7 @@ class ngentod:
                     def zona(zafi_=None): 
                         ind = raw_input('\n%s╠══[?] metode : %s'%(P,K))
                         print '%s║%s'%(P)
-                            print("%s╚══[•] Isi yang benar kentod ] "%(M));self.zona()
+                            print("\n%s╚══[•] Isi yang benar kentod ] "%(M));self.zona()
                         elif ind in ('1', '01'):
                             print '%s╠══[%s•%s] akun %sOK%s saved in >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.3)
                             print '%s╠══[%s•%s] akun %sCP %s saved in > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.3)
