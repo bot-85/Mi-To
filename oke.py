@@ -504,7 +504,7 @@ def crack2(user, pwx):
 		else:
 			if len(status_foll) != 1:
 				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
-				print('\r%s[>_ Crack] [%s/%s] [OK:%s - CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+				print('\r%s[Crack][%s/%s][OK:%s][CP:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
 				sys.stdout.flush()
 				c_bff_ -= 1
 			else:
