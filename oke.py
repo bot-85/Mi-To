@@ -64,12 +64,12 @@ def banner():
 \x1b[0;92m  __  __  /  __ \_/  /     )   ____/\x1b[0;97m|| \x1b[0;93mPantek
 \x1b[0;92m   / ____/    /     /  ——  /  /__   \x1b[0;97m|| \x1b[0;93mMulti
 \x1b[0;92m  / /  ___   / /\/  / __ <   ___/   \x1b[0;97m|| \x1b[0;93mBrute
-\x1b[0;92m /_/  /__/  /_/  /_/_____/__/   \x1b[0;97m|| \x1b[0;93mForce
-\x1b[0;97m════════════════════════════════════════════════════
-\x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mAang-XD \x1b[0;97m& \x1b[0;93mRomi Afrizal
+\x1b[0;92m /_/  /__/  /_/  /_/_____/__/      \x1b[0;97m|| \x1b[0;93mForce
+\x1b[0;97m═══════════════════════════════════════════════════════════════
+\x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mAang Ardiansyah-XD \x1b[0;97m& \x1b[0;93mRomi Afrizal
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
 \x1b[0;92m[•] \x1b[0;97mFacebook : \x1b[0;97mSaya Aang & Why Aang Ardiansyah 
-\x1b[0;97m════════════════════════════════════════════════════""")
+\x1b[0;97m═══════════════════════════════════════════════════════════════""")
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
