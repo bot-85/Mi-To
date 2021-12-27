@@ -25,8 +25,8 @@ current = datetime.now()
 ta = current.year
 bu = current.month
 ha = current.day
-bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"}
-bulan = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
+bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
 try:
     if bu < 0 or bu > 12:
         exit()
@@ -365,7 +365,7 @@ def publik():
         jalan('%s[%s!%s] %sConnection Error'%(M,P,M,P))
         exit()
     try:
-        print('%s[%s•%s] %sType \'me\' To Get ID From Friendlist'%(K,P,K,P))
+        print('%s[%s•%s] %sKetik \'me\' Untuk Crack Teman Sendiri'%(K,P,K,P))
         it = input("%s[%s•%s] %sID Target : "%(K,P,K,P))
         try:
             pb = requests.get("https://graph.facebook.com/" + it + "?access_token=" + token)
@@ -412,7 +412,7 @@ def pengikut():
         jalan('%s[%s!%s] %sConnection Error'%(M,P,M,P))
         exit()
     try:
-        print('%s[%s•%s] %sType \'me\' To Get ID From Friendlist'%(K,P,K,P))
+        print('%s[%s•%s] %sKetik \'me\' Untuk Crack Followers Sendiri'%(K,P,K,P))
         it = input("%s[%s•%s] %sID Target : "%(K,P,K,P))
         try:
             pb = requests.get("https://graph.facebook.com/" + it + "?access_token=" + token)
@@ -459,7 +459,7 @@ def likers():
         jalan('%s[%s!%s] %sConnection Error'%(M,P,M,P))
         exit()
     try:
-        print('%s[%s•%s] %sType \'me\' To Get ID From Friendlist'%(K,P,K,P))
+        print('%s[%s•%s] %sKetik \'me\' Untuk Crack Like Post Sendiri'%(K,P,K,P))
         it = input("%s[%s•%s] %sID Target : "%(K,P,K,P))
         try:
             pb = requests.get("https://graph.facebook.com/" + it + "?access_token=" + token)
@@ -1298,8 +1298,8 @@ def cek_hasil():
             continue
         print("")
     print("")
-    print('%s[%s•%s] %sProses Cek Selesai'%(K,P,K,P))
-    input('\n%s[ %sBack %s]%s'%(K,P,K,P))
+    print('%s[%s✓%s] %sProses Cek Opsi Selesai'%(K,P,K,P))
+    input('\n%s[ %sKembali %s]%s'%(K,P,K,P))
     menu()
 def buy_license():
     clear()
@@ -1374,7 +1374,7 @@ def cek_license():
         jalan('%s[%s•%s] %sBuy A License To The Admin First'%(K,P,K,P))
         exit()
 def var_menu():
-    print('%s[ %sPilih Metode Login%s]'%(K,P,K))
+    print('%s[ %sPilih Metode Login %s]'%(K,P,K))
     print('\n%s[%s1%s] %sLogin Pakai Token'%(K,P,K,P))
     print('%s[%s2%s] %sLogin Pakai Cookie'%(K,P,K,P))
     print('%s[%s3%s] %sTutorial Menggunakan Script'%(K,P,K,P))
@@ -1421,7 +1421,7 @@ def var_author():
 def var_ugen():
     print("%s[%s1%s] %sMendapatkan User Agent"%(K,P,K,P))
     print("%s[%s2%s] %sGanti User Agent %s[%sManual%s]"%(K,P,K,P,K,P,K))
-    print("%s[%s3%s] %sGanti User Agent %s[%sBased Of Phone Type%s]"%(K,P,K,P,K,P,K))
+    print("%s[%s3%s] %sGanti User Agent %s[%sSesuaikan Hp%s]"%(K,P,K,P,K,P,K))
     print("%s[%s4%s] %sHapus User Agent"%(K,P,K,P))
     print("%s[%s5%s] %sCek User Agent"%(K,P,K,P))
     print("%s[%s0%s] %sKembali"%(K,P,K,P))
@@ -1433,7 +1433,7 @@ def started():
     print('\n%s[%s•%s] %sCrack Sedang Berjalan...'%(K,P,K,P))
     print('%s[%s•%s] %sAkun OK Saved In OK/%s.txt'%(K,P,K,P,tanggal))
     print('%s[%s•%s] %sAkun CP Saved In CP/%s.txt'%(K,P,K,P,tanggal))
-    print('%s[%s•%s] %sJika Tidak Ada Hasil, Mode Pesawatkan(5 Detik)\n'%(K,P,K,P))
+    print('%s[%s•%s] %sMode Pesawatkan (5 Detik) Setiap 3 Menit\n'%(K,P,K,P))
 def folder():
     try:os.mkdir("CP")
     except:pass
