@@ -59,16 +59,16 @@ def clear():
     else:os.system("clear")
 def banner():
     print("""\x1b[0;93m   ______     __ __       __
-\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;37m • Create By Aang-XD
-\x1b[0;93m / /   / ___/ // /_/ ___/ //_/\x1b[0;37m • Wa : 089524163441
-\x1b[0;93m/ /___/ /  /__  __/ /__/ ,<   \x1b[0;37m • Yt : Aang-XD
-\x1b[0;93m\____/_/\x1b[0;37mv1.9 \x1b[0;93m/_/  \___/_/|_|  \x1b[0;37m • Tm : XNX-CODE TEAM
-\x1b[0;97m╔═════════════════════════════════════════════════════╗
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Author    : Aang Ardiansyah-XD                  ║
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Github    : Github.com/AngCyber                 ║
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Facebook1 : Saya Aang                           ║
-\x1b[0;97m╠═[\x1b[0;93m•\x1b[0;97m]\x1b[0;37m Facebook2 : Why Aang Ardiansyah                 ║
-\x1b[0;97m╚═════════════════════════════════════════════════════╝
+\x1b[0;93m  / ____/____/ // / _____/ /__\x1b[0;33m ║ Create By Aang-XD
+\x1b[0;93m / /   / ___/ // /_/ ___/ //_/\x1b[0;33m ║ Wa : 089524163441
+\x1b[0;93m/ /___/ /  /__  __/ /__/ ,<   \x1b[0;33m ║ Yt : Aang-XD
+\x1b[0;93m\____/_/\x1b[0;37mv2.0 \x1b[0;93m/_/  \___/_/|_|  \x1b[0;33m ║ Tm : XNX-CODE TEAM
+\x1b[0;92m╔═════════════════════════════════════════════════════╗
+\x1b[0;92m╠══[\x1b[0;93m•\x1b[0;92m]\x1b[0;93m Author    : Aang Ardiansyah-XD                 \x1b[0;92m║
+\x1b[0;92m╠══[\x1b[0;93m•\x1b[0;92m]\x1b[0;93m Github    : Github.com/AngCyber                \x1b[0;92m║
+\x1b[0;92m╠══[\x1b[0;93m•\x1b[0;92m]\x1b[0;93m Facebook1 : Saya Aang                          \x1b[0;92m║
+\x1b[0;92m╠══[\x1b[0;93m•\x1b[0;92m]\x1b[0;93m Facebook2 : Why Aang Ardiansyah                \x1b[0;92m║
+\x1b[0;92m╚═════════════════════════════════════════════════════╝
 """)
 def menu_log():
     os.system('rm -rf token.txt')
